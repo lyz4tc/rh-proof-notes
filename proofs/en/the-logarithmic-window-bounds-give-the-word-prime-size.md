@@ -35,7 +35,7 @@ $$
 b^{m/2}\le T_u,\qquad \log T_u\le C_TmL.
 \tag{5}
 $$
-When these data and (4) hold uniformly for all sufficiently large $x$ in the family, (5) holds uniformly for all sufficiently large $x$. This is the word-prime size predicate `TuSize` used in the simultaneous design. Equation (4) is an input to the present deduction. The [relative-window count](a-relative-prime-window-sets-the-torus-pair-count-within-a-constant.md) gives the conversion from the center to the prime, and [the lower estimate for the adjusted center](the-row-dimension-keeps-the-prime-window-center-above-the-target-scale.md) also has a direct construction-side proof. The estimate applies to each word separately, with the same family threshold.
+When these data and (4) hold uniformly for all sufficiently large $x$ in the family, (5) holds uniformly for all sufficiently large $x$. This is the word-prime size predicate `TuSize` used in the simultaneous design. Equation (4) is an input to the present deduction. The [sharp logarithm bounds](the-sharp-logarithm-bounds-control-every-word-window.md) establish (4) at a family threshold through the [relative-window count](a-relative-prime-window-sets-the-torus-pair-count-within-a-constant.md) gives the conversion from the center to the prime, and [the lower estimate for the adjusted center](the-row-dimension-keeps-the-prime-window-center-above-the-target-scale.md) also has a direct construction-side proof. The estimate applies to each word separately, with the same family threshold.
 
 ### The two large terms in the lower bound
 
