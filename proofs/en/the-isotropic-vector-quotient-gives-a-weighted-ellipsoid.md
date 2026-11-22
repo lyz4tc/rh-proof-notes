@@ -6,7 +6,7 @@ Use the archimedean group $G$ and majorant $M=(P_w)_w$ of [the shortest-vector p
 $$
  \mu\{g\in D_x:\ell_g(x)<t\}=C_x\,t^{2f(n-1)}.
 $$
-The proof below uses two inputs given by the source, the archimedean parabolic coordinates and finite covolume of $\Gamma_x$ in $H$. The full arithmetic argument applies them to lattices with a fixed bound on their dual index. [Vector unfolding statement](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/GroundTheory/HeightsAndTheta/Heights/FiniteCovolume/Statements.lean#L74) · [Deduction](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/GroundTheory/HeightsAndTheta/Heights/FiniteCovolume/PUnfoldingIntegral.lean#L44)
+The proof below uses two inputs given by the source, [the archimedean parabolic coordinates](the-line-stabilizer-gives-the-exact-parabolic-haar-weight.md) and [finite covolume of $\Gamma_x$ in $H$](the-point-stabilizer-inherits-finite-volume-from-the-complement.md). The full arithmetic argument applies them to lattices with a fixed bound on their dual index. [Vector unfolding statement](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/GroundTheory/HeightsAndTheta/Heights/FiniteCovolume/Statements.lean#L74) · [Deduction](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/GroundTheory/HeightsAndTheta/Heights/FiniteCovolume/PUnfoldingIntegral.lean#L44)
 
 ## The two inputs and the quotient integral
 

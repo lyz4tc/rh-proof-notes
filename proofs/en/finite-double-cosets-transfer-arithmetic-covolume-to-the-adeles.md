@@ -1,0 +1,20 @@
+# Finite double cosets transfer arithmetic covolume to the adeles
+
+[Proof catalogue](../../PROOFS.en.md) · [Reading and review status](../../STATUS.md)
+
+Let $G=U(h)$ for a nondegenerate Hermitian form over a CM extension $E/F$. For every Haar measure on $G(\mathbb A_F)$, the diagonal image of $G(F)$ admits a measurable fundamental domain of finite measure. This is the finite-volume input to adelic unfolding in the unitary mean formulas. The source treats all ranks and signatures. [Adelic finite-covolume statement](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/GroundTheory/HeightsAndTheta/Heights/FiniteCovolume/Statements.lean#L38) · [Adelic proof](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/GroundTheory/HeightsAndTheta/Heights/FiniteCovolume/PAdelicCovolumeFinite.lean#L44)
+
+Fix the subgroup $K_f\subseteq G_f=G(\mathbb A_{F,f})$ and the lattice assignment of [the finite-adelic dictionary](finite-adelic-unitaries-give-lattices-of-one-bounded-dual-index.md). The assignment identifies $G_f/K_f$ with its image among integral lattices of one bounded dual index and commutes with the action of $G(F)$. By [rational lattice finiteness](a-finite-lattice-sandwich-controls-isotropic-line-orbits.md) there are finitely many double cosets $G(F)\backslash G_f/K_f$. Choose representatives $s_1,\ldots,s_m$ in $G_f$. For each representative define
+$$
+ \Gamma_i=\{\gamma\in G(F):\,s_i^{-1}\gamma_f s_i\in K_f\}.
+$$
+The dictionary says this is exactly the rational stabilizer of $\Lambda(s_i)$, since the finite condition is equivalent to $\Lambda(\gamma_f s_i)=\Lambda(s_i)$. Its image in $G_\infty=G(F_\infty)$ is discrete and admits a finite-measure fundamental domain $D_i$ by [the arithmetic covolume theorem](the-thick-part-and-short-vector-count-give-finite-covolume.md). The map $G(F)\to G_\infty$ is injective because each archimedean embedding of the coefficients is injective. In particular $\Gamma_i$ has a unique rational element giving any element of its archimedean image. [Choice of representatives and slice groups](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/GroundTheory/HeightsAndTheta/Heights/FiniteCovolume/PAdelicCovolumeFinite.lean#L73)
+
+Under the group identification $G(\mathbb A_F)=G_\infty\times G_f$, take the union of the sets
+$$
+ D_i\times s_iK_f.
+\tag{1}
+$$
+For almost-everywhere coverage, a finite component can first be moved by a rational element to $s_iK_f$, and its archimedean component can then be moved into $D_i$ by a member of $\Gamma_i$ without changing its finite slice. The null exception in $D_i$ gives a null exception in each product slice, and there are only countably many rational translates. To check disjointness, an equality between two points of (1) up to rational translation forces their two double cosets to coincide. Within a slice the rational translating element is in $\Gamma_i$. The fundamental-domain property of $D_i$ eliminates intersections up to null sets for any nonidentity translation, using injectivity of its embedding. Thus (1) is a measurable fundamental domain up to null sets. The Haar measure on the product is a constant multiple of the product of Haar measures. Each $\mu_\infty(D_i)$ is finite and each $s_iK_f$ has the same finite measure as the compact group $K_f$. Their finite sum gives the asserted bound. [Slice union and its finite measure](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/GroundTheory/HeightsAndTheta/Heights/FiniteCovolume/PDoubleCosetCovolume.lean#L130) · [Application to the unitary group](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/GroundTheory/HeightsAndTheta/Heights/FiniteCovolume/PAdelicCovolumeFinite.lean#L94)
+
+Status. Source-based reconstruction draft. The [Lean verification record](../../STATUS.md#lean-verification--lean-核验) describes the published formal proof.
