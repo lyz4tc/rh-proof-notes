@@ -8,6 +8,9 @@ Each paired entry links to the full Chinese note and its English rendering. Stat
 
 ### Simultaneous family construction
 
+- [The new prime preserves the dyadic pairing and ray coordinates](proofs/en/the-new-prime-preserves-the-dyadic-pairing-and-ray-coordinates.md) · Adapted reconstruction draft with Lean references. Pass to a four-cocycle kernel and adjust Frobenius by tame inertia to realize the pairing and all ray coordinates together.
+- [The adjugate column detects a pair on the common kernel](proofs/en/the-adjugate-column-detects-a-pair-on-the-common-kernel.md) · Adapted reconstruction draft with Lean references. Use cocycle evaluation over a quotient to turn the surviving dual class into a nonzero signed evaluation.
+- [A surviving cofactor forces a dual Selmer class](proofs/en/a-surviving-cofactor-forces-a-dual-selmer-class.md) · Adapted reconstruction draft with Lean references. Compare dual Selmer counts on two coefficient modules to force a class surviving the scalar required by the new-prime argument.
 - [A nonzero pairing with one cofactor forces the extended determinant](proofs/en/a-nonzero-pairing-with-one-cofactor-forces-the-extended-determinant.md) · Source-based reconstruction draft. Build a determinant from lifted relations and isolate its single mixed coefficient in the two nilpotent variables.
 - [Two nilpotent variables separate the new prime from the old line](proofs/en/two-nilpotent-variables-separate-the-new-prime-from-the-old-line.md) · Source-based reconstruction draft. Extend a finite local specialization with one inertia variable and one Frobenius variable, and track the exact degree cutoff they impose.
 - [A unit cofactor survives on a finite nilpotent line](proofs/en/a-unit-cofactor-survives-on-a-finite-nilpotent-line.md) · Source-based reconstruction draft. Choose a finite residue extension and a truncated line so that a low-degree unit cofactor divides a controlled power of the line parameter.
