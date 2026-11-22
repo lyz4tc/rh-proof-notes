@@ -764,6 +764,18 @@ The topics and entries below follow the order of the Chinese catalogue.
 
 ### Constructing the Galois representation and its local comparisons
 
+- [Split-place rigidity upgrades weak unitary descent to all split places](proofs/en/split-place-rigidity-upgrades-weak-unitary-descent-to-all-split-places.md) · Source-based reconstruction draft. The finite trace alternative, split rigidity and short Speh strings give full descent.
+- [A half-integral norm twist vanishes under strict Satake bounds](proofs/en/a-half-integral-norm-twist-vanishes-under-strict-satake-bounds.md) · Source-based reconstruction draft. Half-integrality at infinity and strict root bounds force every block twist to vanish.
+- [Many anticyclotomic twists make the nonsplit Rankin–Selberg share small](proofs/en/many-anticyclotomic-twists-make-the-nonsplit-rankin-selberg-share-small.md) · Source-based reconstruction draft. Distinct twists equal at nonsplit places bound that part of the Rankin–Selberg diagonal.
+- [A finite Hecke separator forces a term in the unitary trace formula](proofs/en/a-finite-hecke-separator-forces-a-term-in-the-unitary-trace-formula.md) · Source-based reconstruction draft. Finite Satake separators leave a nonzero endpoint term in the trace comparison.
+- [Hecke polynomials separate the target and preserve unit transfer](proofs/en/hecke-polynomials-separate-the-target-and-preserve-unit-transfer.md) · Source-based reconstruction draft. Finite polynomials kill nonsplit competitors while preserving orbital integrals.
+- [Single-place tests upgrade a weak isobaric base-change datum](proofs/en/single-place-tests-upgrade-a-weak-isobaric-base-change-datum.md) · Source-based reconstruction draft. Fix one weak datum and transport each single-place comparison back to it.
+- [Discrete base-change blocks give the local Speh product](proofs/en/discrete-base-change-blocks-give-the-local-speh-product.md) · Source-based reconstruction draft. Unitary induction and the description of the discrete spectrum give the Speh factors.
+- [A definite theta lift in the stable range](proofs/en/a-definite-theta-lift-in-the-stable-range.md) · Source-based reconstruction draft. A uniform height threshold precedes the choice of the two splitting characters.
+- [Leading minors give the two archimedean types in theta](proofs/en/leading-minors-give-the-two-archimedean-types-in-theta.md) · Source-based reconstruction draft. One polynomial generates the source and target compact types with the determinant shifts.
+- [Finite-place bumps make the stable-range theta lift nonzero](proofs/en/finite-place-bumps-make-the-stable-range-theta-lift-nonzero.md) · Source-based reconstruction draft. Strict domination of the adelic tail makes the lift nonzero for some finite test.
+- [A doubled Eisenstein pairing detects the theta lift](proofs/en/a-doubled-eisenstein-pairing-detects-the-theta-lift.md) · Source-based reconstruction draft. Doubling and holomorphic continuation identify a coefficient integral with the squared lift.
+- [A single nonzero theta projection keeps the local types](proofs/en/a-single-nonzero-theta-projection-keeps-the-local-types.md) · Source-based reconstruction draft. A nonzero projection of the lift supplies all types in one target representation.
 - [Finitely many congruences detect powers of S-units](proofs/en/finitely-many-congruences-detect-powers-of-s-units.md) · Source-based reconstruction draft. Enlarge the cyclotomic exponent, descend its powers by a cocycle identity, and use finitely many Frobenius tests on the units.
 - [Zero monodromy makes the depth-zero support unlinked](proofs/en/zero-monodromy-makes-the-depth-zero-support-unlinked.md) · Source-based reconstruction draft. Remove all segments of length greater than one using the monodromy operator.
 - [An unramified toral lift compares all inertial polynomials](proofs/en/an-unramified-toral-lift-compares-all-inertial-polynomials.md) · Source-based reconstruction draft. Apply toral compatibility over an unramified auxiliary extension and descend the monodromy and jumps.
@@ -798,6 +810,7 @@ The topics and entries below follow the order of the Chinese catalogue.
 
 ### Weight-one geometry and limits of Galois traces
 
+- [Geometric seeds and Hecke approximations give one odd-rank representation](proofs/en/geometric-seeds-and-hecke-approximations-give-one-odd-rank-representation.md) · Source-based reconstruction draft. Seed representations and congruence approximations preserve separate tests in one limiting trace.
 - [Ultrametric polynomials separate compact sets and level cosets](proofs/en/ultrametric-polynomials-separate-compact-sets-and-level-cosets.md) · Source-based reconstruction draft. Approximate indicators by multiplying small polynomials on finitely many compact balls.
 - [Coset polynomials change the weight at one infinite place](proofs/en/coset-polynomials-change-the-weight-at-one-infinite-place.md) · Source-based reconstruction draft. Use a highest-weight coefficient uniformly bounded on the integral cosets.
 - [Projecting a weight family gives new Hecke eigenvalues](proofs/en/projecting-a-weight-family-gives-new-hecke-eigenvalues.md) · Source-based reconstruction draft. Read irreducible weights from the extrema of torus exponents and recover Hecke eigenvalues on the diagonal.
