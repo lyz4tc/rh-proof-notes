@@ -599,6 +599,8 @@ The topics and entries below follow the order of the Chinese catalogue.
 
 ### Crystalline lifts at split primes and Wach modules
 
+- [Low coefficients of a truncated Wach–Frobenius image](proofs/en/truncated-wach-frobenius-expansions.md) · Source-based reconstruction draft. Derives the low Frobenius coefficients at the trivial and primitive cyclotomic roots.
+
 - [The local lifting exponent depends on the filtration width](proofs/en/local-lifting-exponent-from-the-filtration-window.md) · [中文](proofs/zh/%E5%B1%80%E9%83%A8%E6%8F%90%E5%8D%87%E6%8C%87%E6%95%B0%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8F%AA%E4%BE%9D%E8%B5%96%E8%BF%87%E6%BB%A4%E7%AA%97%E5%8F%A3%E7%9A%84%E5%AE%BD%E5%BA%A6.md) · Translation draft.
 - [Realizing finite cohomology classes as crystalline extensions](proofs/en/finite-cohomology-classes-as-crystalline-extensions.md) · [中文](proofs/zh/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%89%E9%99%90%E4%B8%8A%E5%90%8C%E8%B0%83%E7%B1%BB%E5%8F%AF%E4%BB%A5%E5%86%99%E6%88%90%E6%99%B6%E4%BD%93%E8%A1%A8%E7%A4%BA%E7%9A%84%E6%89%A9%E5%BC%A0.md) · Translation draft.
 - [Why crystalline lifting uses the Wach exponent twice](proofs/en/crystalline-lifting-cost-of-two-wach-exponents.md) · [中文](proofs/zh/%E5%88%86%E8%A3%82%E7%B4%A0%E5%A4%84%E7%9A%84%E6%99%B6%E4%BD%93%E6%8F%90%E5%8D%87%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BB%98%E4%B8%A4%E4%BB%BDWach%E6%8C%87%E6%95%B0.md) · Translation draft.
@@ -644,6 +646,7 @@ The topics and entries below follow the order of the Chinese catalogue.
 - [Evaluating open-disc series in crystalline periods](proofs/en/evaluating-open-disc-series-in-crystalline-periods.md) · [中文](proofs/zh/%E6%80%8E%E6%A0%B7%E6%8A%8A%E5%BC%80%E5%9C%86%E7%9B%98%E7%BA%A7%E6%95%B0%E5%8F%96%E5%80%BC%E5%88%B0%E6%99%B6%E4%BD%93%E5%91%A8%E6%9C%9F%E7%8E%AF.md) · Translation draft.
 - [The Teichmüller parameter has a cyclotomic exponential expansion](proofs/en/the-teichmuller-parameter-has-a-cyclotomic-exponential-expansion.md) · [中文](proofs/zh/%E4%B8%BA%E4%BB%80%E4%B9%88Teichm%C3%BCller%E5%8F%82%E6%95%B0%E5%9C%A8%E5%90%84%E5%88%86%E5%9C%86%E5%B1%82%E6%9C%89%E6%8C%87%E6%95%B0%E5%B1%95%E5%BC%80.md) · Translation draft.
 - [A cyclotomic generator of the Fontaine kernel](proofs/en/a-cyclotomic-generator-of-the-fontaine-kernel.md) · [中文](proofs/zh/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%88%86%E5%9C%86%E5%85%83%E7%94%9F%E6%88%90Fontaine%E7%89%B9%E5%8C%96%E7%9A%84%E6%A0%B8.md) · Translation draft.
+- [The cyclotomic denominator in an invariant crystalline basis](proofs/en/the-cyclotomic-denominator-in-an-invariant-crystalline-basis.md) · Source-based reconstruction draft. The integral logarithm quotient gives a unit in the rational crystalline period ring.
 - [Uniform denominators in de Rham truncations](proofs/en/uniform-denominators-in-de-rham-truncations.md) · [中文](proofs/zh/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%99%B6%E4%BD%93%E6%95%B4%E7%8E%AF%E5%9C%A8%E6%AF%8F%E5%B1%82deRham%E6%88%AA%E6%96%AD%E9%83%BD%E6%9C%89%E7%BB%9F%E4%B8%80%E5%88%86%E6%AF%8D.md) · Translation draft.
 - [Descending a crystalline lift costs the degree valuation](proofs/en/descending-a-crystalline-lift-costs-the-degree-valuation.md) · [中文](proofs/zh/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8F%90%E5%8D%87%E6%8C%87%E6%95%B0%E5%9C%A8%E6%8D%A2%E5%9B%9E%E5%8E%9F%E5%B1%80%E9%83%A8%E5%9F%9F%E6%97%B6%E5%8F%AA%E5%8A%A0%E6%AC%A1%E6%95%B0%E8%B5%8B%E5%80%BC.md) · Translation draft.
 
@@ -903,6 +906,7 @@ The topics and entries below follow the order of the Chinese catalogue.
 - [Single-place tests upgrade a weak isobaric base-change datum](proofs/en/single-place-tests-upgrade-a-weak-isobaric-base-change-datum.md) · Source-based reconstruction draft. Fix one weak datum and transport each single-place comparison back to it.
 - [Discrete base-change blocks give the local Speh product](proofs/en/discrete-base-change-blocks-give-the-local-speh-product.md) · Source-based reconstruction draft. Unitary induction and the description of the discrete spectrum give the Speh factors.
 - [A definite theta lift in the stable range](proofs/en/a-definite-theta-lift-in-the-stable-range.md) · Source-based reconstruction draft. A uniform height threshold precedes the choice of the two splitting characters.
+- [How the full-rank split theta orbit fixes the Satake parameters](proofs/en/how-the-full-rank-split-theta-orbit-fixes-the-satake-parameters.md) · Source-based reconstruction draft. The local equivariant pairing gives a full-rank germ and the normalized Satake multiset.
 - [Leading minors give the two archimedean types in theta](proofs/en/leading-minors-give-the-two-archimedean-types-in-theta.md) · Source-based reconstruction draft. One polynomial generates the source and target compact types with the determinant shifts.
 - [Finite-place bumps make the stable-range theta lift nonzero](proofs/en/finite-place-bumps-make-the-stable-range-theta-lift-nonzero.md) · Source-based reconstruction draft. Strict domination of the adelic tail makes the lift nonzero for some finite test.
 - [A doubled Eisenstein pairing detects the theta lift](proofs/en/a-doubled-eisenstein-pairing-detects-the-theta-lift.md) · Source-based reconstruction draft. Doubling and holomorphic continuation identify a coefficient integral with the squared lift.
@@ -938,6 +942,14 @@ The topics and entries below follow the order of the Chinese catalogue.
 - [Two theta lifts share one twist and have disjoint added characters](proofs/en/two-theta-lifts-share-a-twist-and-have-disjoint-characters.md) · Source-based reconstruction draft. Choose one sufficiently large odd rank for both theta lifts and compute their weight and Satake multisets.
 - [Idèle norm shifts give disjoint theta characters](proofs/en/idele-norm-shifts-give-disjoint-theta-characters.md) · Source-based reconstruction draft. Construct the common twist and disjoint padding characters explicitly from a single angular Hecke character.
 - [Prescribing a unitary Hecke character's angular exponents](proofs/en/prescribing-a-unitary-hecke-characters-angular-exponents.md) · Source-based reconstruction draft. Use an auxiliary split prime to enforce compatible prescriptions on an open idèle subgroup, then extend the character.
+
+#### Split completions and Weil–Deligne parameters
+
+- [A split completion preserves the bridge and Weil normalization](proofs/en/a-split-completion-preserves-the-bridge-and-weil-normalization.md) · Source-based reconstruction draft. Reuses the same local bridge and preserves the signed Weil degree at a split place.
+- [Enlarging coefficients preserves the local Weil–Deligne parameter](proofs/en/enlarging-coefficients-preserves-the-local-weil-deligne-parameter.md) · Source-based reconstruction draft. Compares period coordinates and the specialized Weil–Deligne parameter under coefficient enlargement.
+- [Split local comparison uses the same period model](proofs/en/split-local-comparison-uses-the-same-period-model.md) · Source-based reconstruction draft. Transports Weil operators using a common period model at a split completion.
+- [A potentially semistable character has an invertible period](proofs/en/a-potentially-semistable-character-has-an-invertible-period.md) · Source-based reconstruction draft. Uses a period norm and a stable-line argument to obtain an invertible period for a character.
+- [An invertible character period controls the Weil–Deligne twist](proofs/en/an-invertible-character-period-controls-the-weil-deligne-twist.md) · Source-based reconstruction draft. Compares the tensor periods and identifies the same normalized scalar on both sides.
 
 ### Weight-one geometry and limits of Galois traces
 
@@ -989,6 +1001,21 @@ The topics and entries below follow the order of the Chinese catalogue.
 - [Finite-field labels count tame supercuspidal types](proofs/en/finite-field-labels-count-tame-supercuspidal-types.md) · [中文](proofs/zh/%E6%B8%A9%E5%92%8C%E8%B6%85%E5%B0%96%E7%B1%BB%E5%9E%8B%E6%80%8E%E6%A0%B7%E7%94%B1%E6%9C%89%E9%99%90%E5%9F%9F%E6%A0%87%E7%AD%BE%E8%AE%A1%E6%95%B0.md) · Translation draft.
 - [Tame inertia repeated roots exclude repeated higher-rank types](proofs/en/tame-inertia-repeated-roots-exclude-repeated-higher-rank-types.md) · [中文](proofs/zh/%E6%B8%A9%E5%92%8C%E6%83%AF%E6%80%A7%E7%9A%84%E9%87%8D%E5%A4%8D%E6%A0%B9%E6%80%8E%E6%A0%B7%E6%8E%92%E9%99%A4%E9%AB%98%E7%A7%A9%E9%87%8D%E5%A4%8D%E7%B1%BB%E5%9E%8B.md) · Translation draft.
 - [CM conjugation reflects Hodge–Tate weights with a common weight](proofs/en/cm-conjugation-reflects-hodge-tate-weights-about-a-common-integer.md) · [中文](proofs/zh/%E4%B8%BA%E4%BB%80%E4%B9%88CM%E5%85%B1%E8%BD%AD%E6%8A%8AHodge%E2%80%93Tate%E6%9D%83%E5%8F%8D%E5%B0%84%E5%88%B0%E5%90%8C%E4%B8%80%E4%B8%AA%E6%95%B4%E6%95%B0.md) · Translation draft.
+
+#### Integral frames, crystalline traces and rank extraction
+
+- [Joint trace approximation produces an integral lattice tower](proofs/en/joint-trace-approximation-produces-an-integral-lattice-tower.md) · Source-based reconstruction draft. Turns joint trace approximation into compatible integral lattice layers.
+- [From a local representation cover to uniformly linked crystalline frames](proofs/en/closed-phi-frex-linked-crystalline-frames.md) · Source-based reconstruction draft. Chooses a common frame height and passes crystallinity through the frame links.
+- [How linked frames recover the Hodge jumps at one embedding](proofs/en/how-linked-frames-recover-the-hodge-jumps-at-one-embedding.md) · Source-based reconstruction draft. Recovers the Hodge jumps at a fixed embedding by comparing residue operators.
+- [A finite coefficient model retains the chosen Hodge embedding](proofs/en/a-finite-coefficient-model-retains-the-chosen-hodge-embedding.md) · Source-based reconstruction draft. Constructs a finite model retaining the chosen embedding and reads its jump counts.
+- [A uniform Frobenius section over the integral crystalline period ring](proofs/en/a-uniform-frobenius-section-over-acris.md) · Source-based reconstruction draft. Builds an integral Frobenius section with an exponent independent of matrix dimensions.
+- [Frobenius divisibility kills the integral Galois defect](proofs/en/frobenius-divisibility-kills-the-integral-galois-defect.md) · Source-based reconstruction draft. Uses Frobenius divisibility to make the scaled Galois defect vanish.
+- [A Breuil–Kisin frame has integral matrices after clearing its poles](proofs/en/a-breuil-kisin-frame-has-integral-matrices-after-clearing-its-poles.md) · Source-based reconstruction draft. Clears the frame and its inverse at the same height and derives the Galois relations.
+- [An invariant section gives one rational crystalline basis per layer](proofs/en/an-invariant-section-gives-a-rational-crystalline-basis.md) · Source-based reconstruction draft. Combines an integral invariant section and a cleared frame to give a rational period basis.
+- [A Breuil–Kisin frame link controls the integral period bases](proofs/en/a-breuil-kisin-frame-link-controls-the-integral-period-bases.md) · Source-based reconstruction draft. Transfers a frame link to the corrected integral period bases with a uniform precision threshold.
+- [Closing the crystalline Weil trace and its power sums](proofs/en/closing-the-crystalline-weil-trace-and-its-power-sums.md) · Source-based reconstruction draft. Uses signed Frobenius powers and compatible lattice comparisons to close the Weil trace.
+- [How filtered de Rham jumps give a lacunary tangent vector](proofs/en/how-filtered-de-rham-jumps-give-a-lacunary-tangent-vector.md) · Source-based reconstruction draft. Uses Tate vanishing to separate weights and obtain the required Zariski tangent vector.
+- [How lacunary eigenvalues select a common rank](proofs/en/how-lacunary-eigenvalues-select-a-common-rank.md) · Source-based reconstruction draft. Uses the tangent spectrum and scalar matrix corners to extract a representation of common rank.
 
 ### Uniform class-group bounds for a fixed cyclotomic tower
 
