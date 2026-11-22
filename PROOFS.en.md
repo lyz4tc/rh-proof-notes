@@ -247,6 +247,13 @@ The topics and entries below follow the order of the Chinese catalogue.
 
 ### Covariance of the point kernels
 
+- [Constructing the additive phase at a twist prime](proofs/en/constructing-the-additive-phase-at-a-twist-prime.md) · Source-based reconstruction draft. Use integer digits in the local residue ring and recover the required roots from the old datum.
+- [A quadratic Gauss sum normalizes the type prime](proofs/en/a-quadratic-gauss-sum-normalizes-the-type-prime.md) · Source-based reconstruction draft. Obtain the depth-one phase and square-root normalization by finite-field orthogonality.
+- [An explicit matrix makes the type residue unfolding nonzero](proofs/en/an-explicit-matrix-makes-the-type-residue-unfolding-nonzero.md) · Source-based reconstruction draft. Choose a coordinate inclusion for which every supported summand has value one.
+- [Residue unfolding nonvanishing forces a type double coset](proofs/en/residue-unfolding-nonvanishing-forces-a-type-double-coset.md) · Source-based reconstruction draft. Extend one supported rectangle, then remove its extra-coordinate blocks by flag operations.
+- [The type-place unfolding reduces to a finite-field sum](proofs/en/the-type-place-unfolding-reduces-to-a-finite-field-sum.md) · Source-based reconstruction draft. Count the lifts of each scaled residue variable, retaining the exact normalization exponent.
+- [Lifting the type residue factorization to the number field](proofs/en/lifting-the-type-residue-factorization-to-the-number-field.md) · Source-based reconstruction draft. Lift the flag factor and check the sharp cut to obtain the identity double coset.
+- [Assembling the global coefficient at a type prime](proofs/en/assembling-the-global-coefficient-at-a-type-prime.md) · Source-based reconstruction draft. Put local supports, roots-of-unity integrality and word-prime periods on the same coefficient.
 - [The twist chart bounds give the entry support and period](proofs/en/the-twist-chart-bounds-give-the-entry-support-and-period.md) · Source-based reconstruction draft. Carry support and matrix periods through the bounded source and target charts.
 - [Why the twist unfolding stabilizes as the box grows](proofs/en/why-the-twist-unfolding-stabilizes-as-the-box-grows.md) · Source-based reconstruction draft. The support kills the extra denominator classes and the period cancels the box repetition.
 - [Putting a bounded twist lattice in flag normal form](proofs/en/putting-a-bounded-twist-lattice-in-flag-normal-form.md) · Source-based reconstruction draft. Choose a triangular basis in the flag and obtain an integral projected stabilizer.

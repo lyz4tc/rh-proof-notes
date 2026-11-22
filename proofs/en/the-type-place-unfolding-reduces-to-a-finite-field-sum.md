@@ -1,0 +1,42 @@
+# The type-place unfolding reduces to a finite-field sum
+
+[Proof catalogue](../../PROOFS.en.md) · [Reading and review status](../../STATUS.md)
+
+### Statement
+
+Use the dimensions $a=n'+c+1$ and $N=n+c$, the ordinary and extra columns, and the adapted order in [the finite-field calculation](an-explicit-matrix-makes-the-type-residue-unfolding-nonzero.md), with the same $k,m,j,t,c$ and character setup. Let $E$ be a number field and $P$ a prime of norm $q$, with $q$ a rational prime and $q$ a uniformizer of the local ring $A=\mathcal O_{E,P}$. Write $\kappa=A/qA$. Fix an embedding $\sigma:K\hookrightarrow\mathbb C$ of the coefficient field. At this type place use the depth-one additive character $\psi$ with $\sigma(\psi(z/q))=\psi_0(\overline z)$ for $z\in A$. Here $\psi_0$ and $\chi_\ell$ in the finite-field test are the embedded residue characters.
+
+The reference source and target lattices attach $A$ to each ordinary coordinate and $q^{i+1}A$ to extra coordinate $i$. Let $h\in\mathrm{GL}_N(E)$ stabilize the target reference lattice, let the source chart be the identity, and let $\bar h$ be the reduction of $h$ in the scaled reference basis. Denote the project’s sharp type-place first unfolding at depths $A_0,B_0$ by $E_{A_0,B_0,h}(X)$, where $X$ is the ordinary map. Its free matrix entries range independently over $\{u/q^{A_0}:0\le u<q^{A_0+B_0}\}$, with factor $q^{-B_0}$ per entry. Its enlarged test is the sharp integral type test at $h^{-1}Y$ times the nonzero determinant multiplier $C_h$ from the target chart. The other factor is $\psi(-\omega(Y))$.
+
+If $X$ has a nonintegral entry, then $E_{A_0,B_0,h}(X)=0$ at every depth. If $X$ is integral, $A_0\ge c+1$ and $B_0\ge1$, then
+$$
+\sigma(E_{A_0,B_0,h}(X))
+=\sigma(C_h)q^\Gamma F_{\bar h}(\bar X),\qquad
+\Gamma=\sum_{f\ \mathrm{free}}(d_f-1),
+$$
+where $d_f$ is the source scaling exponent minus the target scaling exponent at entry $f$, and $F_{\bar h}$ is the [finite residue unfolding with target matrix $\bar h$](residue-unfolding-nonvanishing-forces-a-type-double-coset.md). In particular the local unfolding is a nonzero function at all sufficiently large depths if and only if $F_{\bar h}$ is a nonzero function on the ordinary residue matrices.
+
+### Reduction of a summand
+
+Let $D_s,D_t$ be the diagonal matrices of the source and target reference bases, so the scaled matrix of $Y$ is $Y^\natural=D_t^{-1}YD_s$. The scaled matrix $h^\natural=D_t^{-1}hD_t$ is in $\mathrm{GL}_N(A)$, since $h$ and its inverse preserve the reference lattice. In particular its determinant, which equals $\det h$, is a unit of $A$. Thus the determinant valuation exponent in $C_h$ vanishes and the remaining inverse local character evaluated at $\det h$ is nonzero. The scaled matrix of $h^{-1}Y$ is $(h^\natural)^{-1}Y^\natural$, integral exactly when $Y^\natural$ is integral. In this case reduction is $\bar h^{-1}\overline{Y^\natural}$.
+
+The sharp integral type test requires all scaled entries to be integral. It requires entries in rows $p\ge a$ to be in $qA$ and imposes the diagonal-one and remaining zero conditions on the scaled reductions in rows $p<a$. In the adapted order these are exactly the finite test’s allowed positions. The divisibility by $q$ has become reduction to zero. The integral additive phase sums the adjacent superdiagonal entries below $r$, omitting the entry at row $k-1$, column $k$. The finite test includes that entry, but it is zero on the support since column $k$ cannot have a nonzero entry at row $k-1$. Reduction commutes with sums and determinants of integral entries, so the remaining test factors reduce to their finite-field counterparts, including both cases of the determinant characters at zero.
+
+For an ordinary source column the original map $X$ occurs in the ordinary target rows, where source and target scaling exponents are both zero. Nonintegrality of an entry of $X$ therefore makes every summand vanish. Assume then that $X$ is integral. Among the nonfree entries the only ones beyond the ordinary block are the fixed zero and one entries. The fixed one entries match an extra source coordinate to the extra target coordinate with the same exponent, so scaling leaves them equal to one. A free entry $v_f$ becomes $q^{d_f}v_f$. To see that $1\le d_f\le c+1$, an extra source column $i$ has exponent $i+1$ and its free rows have exponent zero on the ordinary target space or exponent $l+1$ with $l<i$. This includes the completely free last extra column, since $l<c$ on the target. Thus the free entries are the only possible obstruction to integrality, and whenever each is integral, $\overline{Y^\natural}$ is the residue filling attached to $\bar X$ and residues $\overline{q^{d_f}v_f}$.
+
+In $\omega(Y)$ every term pairs extra source coordinate $i+1$ with extra target coordinate $i$. Scaling multiplies each such entry by $q$. Hence $\omega(Y)$ is $1/q$ times the corresponding sum of entries of $Y^\natural$. On an integral scaled matrix the phase $\psi(-\omega(Y))$ becomes $\psi_0(-\omega(\overline{Y^\natural}))$ under $\sigma$ by the depth-one identity.
+
+### Count the lifts of each free entry
+
+For an entry with exponent difference $d$, write $v=u/q^{A_0}$. The integer $u$ lies in $[0,q^{A_0+B_0})$. Since $A_0\ge d$, the scaled entry $q^dv$ is integral exactly when $q^{A_0-d}\mid u$. This follows from $q$ generating the maximal ideal and the identification $\kappa=\mathbb F_q$, or from the [integer residue argument](constructing-the-additive-phase-at-a-twist-prime.md). Write $u=q^{A_0-d}w$ on these values. Now $0\le w<q^{B_0+d}$ and the scaled residue is $\bar w$. Every residue in $\kappa$ occurs exactly $q^{B_0+d-1}$ times. The count is independent of the residue.
+
+Each residue filling therefore contributes its residue summand times $\prod_f q^{B_0+d_f-1}$. The factors $q^{-B_0}$ from the normalization leave precisely $q^\Gamma$. This proves the identity. Since the multiplier is nonzero, any nonzero value at a sufficiently large depth gives a nonzero residue value. Conversely every ordinary residue matrix lifts to an integral ordinary matrix, so a nonzero residue value gives a nonzero value of the local unfolding at that lift for all $A_0\ge c+1$, $B_0\ge1$.
+
+### Lean correspondence
+
+- [`lamY` and `entB`](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Formalism/LocalToGlobal/Columns/FiniteSumNonzeroLargeDepth.lean#L690) define the reference lattices and scaled entries. [`lamGvS` and `PhiGS`](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Formalism/LocalToGlobal/Columns/FiniteSumNonzeroLargeDepth.lean#L789) give the sharp type phase and test.
+- [`ocbPhiGS_supp` and `ocbPhiGS_red`](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Formalism/LocalToGlobal/Columns/OcbPhiFIdxFPos.lean#L65) give integrality and compatibility of the test with reduction. [`ocbT_trans`](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Formalism/LocalToGlobal/Columns/OcbTIntOfStab.lean#L124) preserves those properties after composition with the inverse target chart.
+- [`ocbS_card_vals`](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Formalism/LocalToGlobal/Columns/FirstUnfoldingEqZeroOfNotIntegral.lean#L134) counts the lifts, [`ocbExp` and `firstUnfolding_eq_zero_of_not_integral`](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Formalism/LocalToGlobal/Columns/FirstUnfoldingEqZeroOfNotIntegral.lean#L346) give $\Gamma$ and the vanishing, and [`firstUnfolding_reduction_eq`](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Formalism/LocalToGlobal/Columns/FirstUnfoldingEqZeroOfNotIntegral.lean#L365) proves the sum identity.
+- [`reductionExistsInLatticeStabilizer_holds`](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Formalism/LocalToGlobal/Columns/ReductionExistsInLatticeStabilizerHolds.lean#L187) specializes the calculation to the true-chain type places and translates nonvanishing in both directions.
+
+Status. Source-based reconstruction draft. This result uses the fixed source chart $1$, a target chart stabilizing the reference lattice, and the sharp depth-one type-place constants. See the [Lean verification record](../../STATUS.md#lean-verification--lean-核验).
