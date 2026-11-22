@@ -19,7 +19,7 @@ Fix a host CM extension $E/F$ unramified at the finite places. A host Hermitian 
    =\frac{(((n-1)!)(v/\pi)^n)^f}{(2v)^{f/2}}L(n,\eta).
    \tag{2}
    $$
-   This is `MassRatio₂`. The proof of the Siegel mass ratio and the proof of the relative volume formula (1) are separate inputs here.
+   This is `MassRatio₂`. See [the two limits giving the Siegel mass ratio](two-limits-of-one-lattice-count-give-the-siegel-mass-ratio.md) and [the relative volume formula](two-evaluations-of-the-one-vector-mean-give-the-volume-ratio.md).
 
 Then for every such $W$ with $P\ge2$ one has $\operatorname{vol}_D(W)=M_{P+Q}$. In particular the base space $Y_0$ used in the word-prime size calculation has $P\ge2$ and rank $r$, and $\operatorname{vol}_D(Y_0)=M_r$.
 
