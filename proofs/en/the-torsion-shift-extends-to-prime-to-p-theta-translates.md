@@ -6,7 +6,7 @@ Take a split CM curve as in [the normalized chart](a-single-unit-aligns-the-spli
 $$
 \widehat{W_yU_t\theta}(X)=\widehat{U_t\theta}\bigl(\zeta(1+X)-1\bigr).
 $$
-Use as inputs that the unshifted theta has an integral chart series, the normalized chart gives this identity for $W_y\theta$, and an elliptic function analytic at zero with bounded chart series translates by a small point through that point's multiplicative coordinate. The scaled theta quotient below is meromorphic and elliptic, analytic at zero and has bounded chart series by the corresponding quotient theorem.
+Use as inputs that the unshifted theta has an integral chart series, the normalized chart gives [the unshifted Weyl identity](two-cm-multipliers-determine-the-unshifted-theta-translation.md), and a bounded elliptic chart series [translates by the multiplicative coordinate](a-bounded-elliptic-series-translates-through-the-local-multiplicative-chart.md). The scaled theta quotient below is meromorphic and elliptic, analytic at zero and has bounded chart series by the [integral quotient theorem](a-cm-theta-norm-quotient-is-an-integral-unit.md).
 
 Let $f=U_t\theta/\theta$, analytic at zero, and $\phi(z)=f(sz)$. The multiplier $s$ clears the period denominator of $t$, so $\phi$ is elliptic for the CM period lattice. For the scaled chart write $P_s(X)=(1+X)^s-1$. Then $\widehat\phi=\widehat f\circ P_s$. As $s$ is a $q$-adic unit, $P_s$ and its inverse $P_{1/s}$ have integral coefficients. Hence boundedness of $\widehat\phi$ also gives boundedness of $\widehat f$.
 
