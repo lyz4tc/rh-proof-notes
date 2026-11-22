@@ -15,7 +15,7 @@ $$
  d(\mu+e_i)=d(\mu)\frac{V(\mu+e_i)}{V(\mu)}.
 \tag{2}
 $$
-The source proves this shift ratio by tensoring with the defining representation and extracting an infinitesimal-character summand. It is used to keep one ratio constant as the weights grow. [Degree translation by one coordinate](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/TensorRepresentations/Sandwich.lean#L17) · [Apply the translation to the chosen degrees](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/FormalDegree/FdConsA.lean#L128)
+The [two-direction tensor comparison](forward-and-dual-tensor-shifts-force-the-exact-degree-ratio.md) proves this shift ratio by finding the shifted series in the defining and dual tensors and comparing their projection traces. It is used to keep one ratio constant as the weights grow. [Degree translation by one coordinate](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/TensorRepresentations/Sandwich.lean#L17) · [Apply the translation to the chosen degrees](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/FormalDegree/FdConsA.lean#L128)
 - For $\lambda_{t,i}=\lambda_i+t(N-1-i)$, write $\mathcal A_t$ for the corresponding model operator and $w_t$ for its unit highest weight vector. For each $y\in\mathbb C^{\mathcal P}$ the small-argument coefficient satisfies
 $$
  \langle w_t,\mathcal A_t(y/\sqrt t)w_t\rangle

@@ -1,0 +1,23 @@
+# Forward and dual tensor shifts force the exact degree ratio
+
+[Proof catalogue](../../PROOFS.en.md) · [Reading and review status](../../STATUS.md)
+
+Let $\lambda$ be an integral regular parameter for $U(p,q)$, $p,q\ge1$, whose opposite-sign gaps are at least $h>1+\operatorname{thr}_*(p,q)$, with
+$$
+ \operatorname{thr}_*(p,q)=\max\!\bigl(Npq+1,\ 16N\min(p,q)+8\sqrt{2\min(p,q)}\bigr),
+ \qquad N=p+q.
+$$
+If $\lambda'=\lambda+e_s$ is still strictly decreasing, the project proves for any fixed Haar measure on $U(p,q)$ that
+$$
+ \frac{d(\lambda')}{d(\lambda)}=\frac{V(\lambda')}{V(\lambda)}.
+\tag{1}
+$$
+Increasing one coordinate weakens any gap by at most one, so the two models can be used with thresholds $h$ and $h-1$, both larger than $\operatorname{thr}_*$. In this argument the models supply positive compressed operators on polar exponentials, weighted $L^2$ coefficients on the generated modules, and the infinitesimal characters in (1) of [the moment calculation](gelfand-moments-identify-the-tensor-projection-traces.md). The source assembles those hypotheses before applying the calculation to arbitrary models of the same parameters. [Construct models with the needed properties](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/TensorRepresentations/SandwichA.lean#L29) · [Transport the ratio to the given models](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/TensorRepresentations/SandwichA.lean#L141)
+
+By [compact Pieri and projection](compact-pieri-and-a-positive-coefficient-pairing-force-the-shifted-series.md), the module of $\lambda'$ embeds into the $a_s$-eigenspace of the defining tensor of the $\lambda$-module. Transfer this eigenspace by the weighted coefficient map to its closure in the vector-valued right regular representation. The closure of the shifted module there has degree $d(\lambda')$. The source justifies this by transferring its positive invariant inner product and integrating the intertwining of derived actions on analytic vectors. Equivalently, on the irreducible admissible shifted module the two positive invariant forms agree up to scalar. The comparison map between them is defined on each finite-dimensional compact isotypic space by Riesz representation. It commutes with the compact and derived actions by invariance of both forms, so irreducibility makes it scalar. After rescaling it completes to a unitary map. The derived intertwining integrates on the dense analytic vectors and extends by continuity. [Identify the shifted representation inside the coefficient closure](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/TensorRepresentations/TraceFormula.lean#L129) · [Unitary transfer of the generated representations](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/DiscreteSeriesExistence/Arbitrary.lean#L137)
+
+The partial trace of the projection onto this eigenspace is $V(\lambda')/V(\lambda)$, by [the Gelfand moments](gelfand-moments-identify-the-tensor-projection-traces.md). Apply [the coefficient trace inequality](a-signed-coefficient-embedding-compares-the-degree-with-a-projection-trace.md) to this occurrence to get $d(\lambda')/d(\lambda)\le V(\lambda')/V(\lambda)$.
+
+Now start from $\lambda'$, use the dual defining representation and shift back by $-e_s$. All the same assumptions hold. Its embedded constituent has degree $d(\lambda)$, and its projection trace is the reciprocal Vandermonde ratio. The inequality in that direction gives $d(\lambda)/d(\lambda')\le V(\lambda)/V(\lambda')$. All these quantities are positive, so the two inequalities imply (1). The equality case of the trace proof also identifies the whole specialized eigenspace in the source. If a shift is singular, the Vandermonde numerator vanishes, and the zero-trace criterion instead makes the relevant projection zero. [Apply the trace inequality in both directions](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/TensorRepresentations/CcARatioZero.lean#L82) · [A singular shift gives zero](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/ReciprocityTheory/ReductiveGroups/DiscreteSeries/TensorRepresentations/CcARatioZero.lean#L143)
+
+Status. Source-based reconstruction draft. The [Lean verification record](../../STATUS.md#lean-verification--lean-核验) describes the published formal proof.
