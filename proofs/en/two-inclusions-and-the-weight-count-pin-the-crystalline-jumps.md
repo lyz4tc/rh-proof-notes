@@ -1,0 +1,20 @@
+# Two inclusions and the weight count pin the crystalline jumps
+
+[Proof catalogue](../../PROOFS.en.md) · [Reading and review status](../../STATUS.md)
+
+Let $E$ be CM with algebraic closure $\Omega$, let $\ell$ be a prime, $\iota\colon\overline{\mathbb Q}_\ell\simeq\mathbb C$, and let $U$ be a rank-$a$ definite-unitary automorphic datum over $E^+$ in the project's realization over $E$. Let $r,\rho$ be Galois representations over $\overline{\mathbb Q}_\ell$ of dimensions $a$ and $d$. Suppose $r$ is semisimple and $\rho$ embeds in $r^{\oplus m}$ for some finite $m$. Suppose $r$ is crystalline at $w\mid\ell$. At each compatible bridge for $w$, each induced embedding $\tau\colon E\to\overline{\mathbb Q}_\ell$, and each weight $\lambda$ of $U$ at $\iota\circ\tau$, assume every automorphic jump in
+$$
+J=\{(a-1)/2-z\mid z\in\operatorname{infChar}(\lambda)\}
+$$
+occurs among the filtration jumps of $\rho$ at $\tau$. Then $r$ is crystalline, is de Rham, and has exactly the multiset $J$ of jumps at $\tau$ for every such weight and induced embedding. As usual in the project, compatible bridges include every prolongation and choice of tied prime and $A_{\mathrm{inf}}$ period data. [Exact jump input](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/ZetaCharacterDivisibility/InsideRefl.lean#L64) · [Statement of the transfer](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/ZetaCharacterDivisibility/PhiOfDivOf.lean#L95) · [Lean proof](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/ZetaCharacterDivisibility/PJumpSeed.lean#L16)
+
+## Proof
+
+Crystallinity implies the de Rham condition. Fix the local data, embedding and weight. The jump multiset $J_r$ of $r$ has cardinality $a$, since the dimensions of the associated graded pieces of its de Rham filtration at this embedding sum to $a$. The automorphic multiset $J$ has exactly $a$ elements and no repetitions. In the project's dominant integral weight convention, the entries are obtained from the weakly decreasing weight by adding the strictly ordered half-sum of roots, so the infinitesimal-character entries are strictly ordered. Equivalently $J$ is the multiset of the finite set `wtJumps`. [Multiplicity and cardinality in the proof](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/ZetaCharacterDivisibility/PJumpSeed.lean#L24)
+
+Because $r$ is semisimple globally, every subrepresentation of $r^{\oplus m}$, including $\rho$, has a global invariant complement. This decomposition remains a direct sum when restricted to the local decomposition group. Crystallinity and the de Rham filtration of a direct sum are computed from its summands. Thus the jumps of $\rho$ form a submultiset of the $m$-fold repetition of $J_r$. Every jump in $J$ occurs in the jumps of $\rho$ by assumption, and hence occurs in $J_r$. As $J$ has no repeated jump, this occurrence assertion implies inclusion as multisets. The common cardinality $a$ then gives $J=J_r$. [Use of the direct sum and cardinality](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/ZetaCharacterDivisibility/PJumpSeed.lean#L31)
+
+This argument needs the embedding of $\rho$ in copies of $r$. In the rank extraction there is also an embedding $r\hookrightarrow\rho$, used in the opposite direction to deduce crystallinity from a suitable geometric model. The larger geometric model can have repeated jumps.
+
+
+Status. Source-based reconstruction draft. The [Lean verification record](../../STATUS.md#lean-verification--lean-核验) describes the published formal proof.
