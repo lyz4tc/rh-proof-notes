@@ -8,6 +8,9 @@ Each paired entry links to the full Chinese note and its English rendering. Stat
 
 ### Simultaneous family construction
 
+- [Removing auxiliary primes factors the Hecke determinant](proofs/en/removing-auxiliary-primes-factors-the-hecke-determinant.md) · Source-based reconstruction draft. Constructs the Hecke polynomial family, bounds the residual orders of its factors, and converts its specialization to a signed lattice-index bound.
+- [A universal matrix specializes to the twisted Selmer length](proofs/en/a-universal-matrix-specializes-to-the-twisted-selmer-length.md) · Source-based reconstruction draft. Constructs the determinant polynomial from a universal Selmer presentation and identifies every specialization with a normalized length.
+- [Removing auxiliary primes gives the toric polynomial factor](proofs/en/removing-auxiliary-primes-gives-the-toric-polynomial-factor.md) · Source-based reconstruction draft. Constructs the integral toric evaluation polynomial and derives its prescribed factor modulo the cyclotomic relations.
 - [A single ray character satisfies all the exported twist bounds](proofs/en/a-single-ray-character-satisfies-all-the-exported-twist-bounds.md) · Source-based reconstruction draft. Simultaneous determinant specialization controls the Selmer, toric, Hecke and tame losses for every primitive power.
 - [A uniform relative-index bound forces theta lattices to have full rank](proofs/en/a-uniform-relative-index-bound-forces-theta-lattices-to-have-full-rank.md) · Source-based reconstruction draft. A descending sequence of full-rank supersets tests rank and transfers the index bound from an integral multiple of the projector.
 - [One cyclotomic level controls Selmer, toric and Hecke determinants](proofs/en/one-cyclotomic-level-controls-selmer-toric-and-hecke-determinants.md) · Source-based reconstruction draft. The two low-coefficient bounds and the uniform Newton-polygon exception count give the common twist specialization.
