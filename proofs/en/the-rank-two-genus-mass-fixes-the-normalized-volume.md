@@ -12,11 +12,11 @@ Fix a host CM extension $E/F$ unramified at the finite places. A host Hermitian 
      (2v)^{f(1/2-n)}L(n,\eta^n)^{-1}.
    \tag{1}
    $$
-   Here $L(n,\eta)$ has a factor $(1-\eta(\mathfrak p)^n(\operatorname N\mathfrak p)^{-n})^{-1}$ at each finite prime $\mathfrak p$ of $F$, with value $+1$ of $\eta(\mathfrak p)$ at split primes and $-1$ at inert primes. These are the host's `lValEta` factors grouped over $F$, so even $n$ uses $\zeta_F(n)$.
+   Here $L(n,\eta^n)$ has a factor $(1-\eta(\mathfrak p)^n(\operatorname N\mathfrak p)^{-n})^{-1}$ at each finite prime $\mathfrak p$ of $F$, with value $+1$ of $\eta(\mathfrak p)$ at split primes and $-1$ at inert primes. These are the host's `lValEta` factors grouped over $F$, so even $n$ uses $\zeta_F(n)$.
 3. For $n\ge3$ the standard mass ratio is
    $$
    \frac{M_n}{M_{n-1}}
-   =\frac{(((n-1)!)(v/\pi)^n)^f}{(2v)^{f/2}}L(n,\eta).
+   =\frac{(((n-1)!)(v/\pi)^n)^f}{(2v)^{f/2}}L(n,\eta^n).
    \tag{2}
    $$
    This is `MassRatio₂`. See [the two limits giving the Siegel mass ratio](two-limits-of-one-lattice-count-give-the-siegel-mass-ratio.md) and [the relative volume formula](two-evaluations-of-the-one-vector-mean-give-the-volume-ratio.md).
