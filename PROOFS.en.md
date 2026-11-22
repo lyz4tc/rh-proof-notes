@@ -8,6 +8,8 @@ Each paired entry links to the full Chinese note and its English rendering. Stat
 
 ### Simultaneous family construction
 
+- [A Fourier coefficient converts the theta bound into a count error](proofs/en/a-fourier-coefficient-converts-the-theta-bound-into-a-count-error.md) · Source-based reconstruction draft. Scale one fixed test and read the two Fourier coefficients with matching Haar measures.
+- [Cuspidal cancellation bounds the weighted theta difference](proofs/en/cuspidal-cancellation-bounds-the-weighted-theta-difference.md) · Source-based reconstruction draft. Cancel the common constant and combine Gaussian counts, cusp bounds, and finitely many finite-adèlic test functions.
 - [Finite projections determine the adelic norm-orbit measure](proofs/en/finite-projections-determine-the-adelic-norm-orbit-measure.md) · Source-based reconstruction draft. Push forward from integral tails, use local transitivity, and recover one scalar from the compatible finite products.
 - [A denominator sequence gives the full growth of the local density product](proofs/en/a-denominator-sequence-gives-the-full-growth-of-the-local-density-product.md) · Source-based reconstruction draft. Enlarge the boxes at a fixed set of good places while leaving the remaining product unchanged.
 - [Primitive residue vectors control all nonzero integral norm densities](proofs/en/primitive-residue-vectors-control-all-nonzero-integral-norm-densities.md) · Source-based reconstruction draft. Treat the zero residue class by a dilation recursion after counting all smooth residue vectors.
