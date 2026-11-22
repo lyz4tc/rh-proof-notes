@@ -8,6 +8,9 @@ Each paired entry links to the full Chinese note and its English rendering. Stat
 
 ### Simultaneous family construction
 
+- [Small isotropic vectors and large-box packing give the average count](proofs/en/small-isotropic-vectors-and-large-box-packing-give-the-average-count.md) · Source-based reconstruction draft. Discreteness forces small norms to vanish, then a fixed-radius count controls every larger box.
+- [The hyperbolic parabolic has exponentially weighted cusp layers](proofs/en/the-hyperbolic-parabolic-has-exponentially-weighted-cusp-layers.md) · Source-based reconstruction draft. The horizontal and central unipotent coordinates determine the Haar exponent of each layer.
+- [The isotropic-line count sums over a parabolic flow](proofs/en/the-isotropic-line-count-sums-over-a-parabolic-flow.md) · Source-based reconstruction draft. Use a dual vector to bound the rational scalar on each line and sum the weighted cusp layers.
 - [Self-dual Haar rescalings cancel in the adelic Gram mean](proofs/en/self-dual-haar-rescalings-cancel-in-the-adelic-gram-mean.md) · Source-based reconstruction draft. Use determinant scalars for the source and target pairings, each of product one.
 - [Unfolding the first vector inducts on the Gram rank](proofs/en/unfolding-the-first-vector-inducts-on-the-gram-rank.md) · Source-based reconstruction draft. Use the one-vector average to integrate complementary frame averages one row at a time.
 - [An orthogonal first vector splits the local Gram fibre measure](proofs/en/an-orthogonal-first-vector-splits-the-local-gram-fibre-measure.md) · Source-based reconstruction draft. Use the mixed Gram entries as coordinates and track their norm-line Jacobian.
