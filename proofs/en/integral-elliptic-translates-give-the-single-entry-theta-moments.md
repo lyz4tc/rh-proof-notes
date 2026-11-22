@@ -1,0 +1,27 @@
+# Integral elliptic translates give the single-entry theta moments
+
+[Proof catalogue](../../PROOFS.en.md) · [Reading and review status](../../STATUS.md)
+
+## Statement
+
+Use the host, curve ideal $\mathfrak c$, period scale $\omega=\Omega/\iota(\delta_0)$, odd split prime $q\nmid N(\mathfrak c)$, and principal period data of [the normalized-pair integral moment theorem](unitary-pullback-gives-integral-moments-for-a-normalized-theta-translate.md). Let $f=[E:K]$, $V=\mathbb C^\Phi$, and let $\Gamma\subseteq V$ be the single-entry period lattice of the host. Its generators are $w(\tau(x))_\tau$ for $w$ in the elliptic lattice $\Lambda=\delta\mathfrak c$ and $x$ in the inverse half-different ideal of $E$. Write $F=B.\mathrm{thMM}$ for the single-entry theta at that lattice. Here $H(z,w)=\sum_{\tau}z_\tau\bar w_\tau/\operatorname{area}(\Lambda)$ and $U_t$ is the Heisenberg translate for $H$. If $n t\in\Gamma$ for some positive integer $n$ prime to $q$, then $U_tF$ has integral lattice moments at scale $\omega$ on $\Gamma$. [Single-entry moment theorem `translates_latInt`](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/CmThetaBaseVectorTranslatesIntegral.lean#L51)
+
+## Proof
+
+Apply [the split determinant correction](the-split-determinant-correction-makes-the-fourfold-theta-scalar-a-unit.md) to $F$. It gives an isometry $g$ from the orthogonal sum of four copies of $V$ to the standard $4f$-dimensional space, and an equality $F^{\boxtimes4}=e K_g$ with $|\iota(e)|_q=1$. The image $M=g(\Gamma^4)$ is self-dual for the alternating form and commensurable with $S=\Lambda^{4f}$, with $I=[M:M\cap S]$ finite and prime to $q$. The finite kernel $K_g$ is the $\smash{I^{-1/2}}$-normalized average of the translates of the product of scalar ideal-lattice thetas of $\Lambda$, with one sign for each coset. Write $B=g(t,t,t,t)$, so $nB\in M$.
+
+The complex identity obtained in [the finite fourfold expansion](four-theta-copies-as-a-finite-sum-of-one-variable-translates.md#the-finite-average-after-translation) depends only on these lattice, sign and torsion conditions. It reads
+$$
+ (U_t F)^{\boxtimes4}(g^{-1}z)
+  =\sum_{x\in\mathcal X} c_x \prod_{j=1}^{4f}(U_{B_j+x_j}F_0)(z_j),
+\tag{1}
+$$
+where $F_0$ is the scalar normalized theta of $\Lambda$, $\mathcal X$ is a set of coset representatives in $M$ modulo $M\cap S$, and $c_x$ is $e I^{-1/2}$ times the prescribed sign and $\exp(-\pi i\,\operatorname{Im}H_{\mathrm{std}}(B,x))$. The translated average follows by applying $U_B$ to the numerator of the kernel and using $U_BU_x=\exp(-\pi i\,\operatorname{Im}H_{\mathrm{std}}(B,x))U_{B+x}$. The last exponential is a root of unity because $nB,x\in M$ and the alternating form is integral on $M$. Thus all $c_x$ have norm at most one. Moreover $n(B+x)\in M$, so $nI(B+x)\in S$. In particular every scalar shift $B_j+x_j$ is killed modulo $\Lambda$ by $nI$, which is prime to $q$. [Finite expansion and prime-to-(q) denominators](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/CmThetaBaseVectorTranslatesIntegral.lean#L66) · [Translated finite average](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Formalism/LocalToGlobal/TorsionIntegrality/QuadraticSemicharacters/QuadraticSemicharacterIdentityReformulated2.lean#L10)
+
+The [scalar ideal-lattice moment theorem](scaling-the-cm-curve-ideal-theta-gives-integral-moments.md) gives an integral lattice moment bound for $U_{B_j+x_j}F_0$ on $\Lambda$ at the common scale $\omega$. Pull it back along the projection onto coordinate $j$ from $S$, then take the products and the sum in (1) using [the moment closure rules](binomial-jet-integrality-survives-products-pullbacks-and-tensor-descent.md). Thus (1) has integral lattice moments on $S$. The isometry $g$ maps $\Gamma^4$ to $M$ with $I M\subset S$. The prime-to-$q$ pullback rule shows that $(U_tF)^{\boxtimes4}$ has integral moments on $\Gamma^4$. Finally descend from the four independent blocks by reading the same binomial coefficient in each block. Every coefficient of the single-entry series then has norm at most one, so $U_tF$ has the required lattice moment property on $\Gamma$. This is the input to the standard matrix tensor in the normalized-pair theorem. [Pullback of the sum and fourth tensor descent](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/CmThetaBaseVectorTranslatesIntegral.lean#L141) · [Matrix-entry tensoring](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/CmBaseThetaTensorPowerTranslatesIntegral.lean#L28)
+
+## Source and verification
+
+The exact translated sum and its denominators were checked against the pinned source. The split determinant correction and scalar translate estimate are the linked upstream inputs. This proof bounds all binomial moments, with the same scale for the scalar, single-entry and matrix functions. No Lean replay or axiom check was performed for this note.
+
+Status. Source-based reconstruction draft. The [Lean verification record](../../STATUS.md#lean-verification--lean-核验) describes the published formal proof.

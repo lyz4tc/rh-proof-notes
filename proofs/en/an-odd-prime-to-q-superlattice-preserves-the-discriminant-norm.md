@@ -1,0 +1,55 @@
+# An odd prime-to-q superlattice preserves the discriminant norm
+
+[Proof catalogue](../../PROOFS.en.md) · [Reading and review status](../../STATUS.md)
+
+## Statement
+
+Let $q$ be an odd prime and $\iota:\mathbb C\simeq\mathbb C_q$. Take two complex rank-two lattices $\Lambda\subseteq\Lambda'$ such that $N\Lambda'\subseteq\Lambda$ for a positive integer $N$ prime to $2q$. Write $\Delta(\Lambda)=g_2(\Lambda)^3-27g_3(\Lambda)^2$ and likewise for $\Lambda'$. Assume $\Lambda$ has a good integral Weierstrass model after transport by $\iota$, with unit discriminant, linked to the lattice coordinates by a nonzero scaling $c$. In the notation of that model,
+$$
+ \iota(x(z))=\frac{\iota(\wp_\Lambda(z))}{\iota(c)^2}-b_2/12 .
+$$
+Then
+$$
+                 |\iota(\Delta(\Lambda'))|_q
+                    =|\iota(\Delta(\Lambda))|_q .
+\tag{1}
+$$
+In particular, for the maximal order $\mathcal O_K$ of the host imaginary quadratic field $K$, its nonzero integral ideal $\mathfrak c$ with $N(\mathfrak c)$ prime to $2q$, and discriminant roots $\delta^{12}=\Delta(\mathfrak c)$, $\delta_0^{12}=\Delta(\mathcal O_K)$, the ratio $\delta/\delta_0$ is algebraic with $|\iota(\delta/\delta_0)|_q=1$ for every field isomorphism $\iota$. The intermediate implication (1) also applies to lattices without CM. [Discriminant equality `norm_disc_eq`](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NormDiscriminantSuperlatticeOddIndexEq.lean#L223) · [The ratio `delta_ratio`](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DiscOneScaleRatioIdealRingAlgebraicUnit.lean#L101)
+
+## Proof
+
+### Half-periods and the superlattice product
+
+Take $T_0$ to be a representative list of $\Lambda'/\Lambda$ containing $0$, and $T=T_0\setminus\{0\}$. This quotient is finite since $\Lambda'/\Lambda$ is contained in $(N^{-1}\Lambda)/\Lambda$. We first show, for $w\notin\Lambda'$ with $2w\in\Lambda$, the meromorphic identity
+$$
+ \bigl(\wp_{\Lambda'}(z)-\wp_{\Lambda'}(w)\bigr)
+       \prod_{t\in T}\bigl(\wp_\Lambda(z)-\wp_\Lambda(t)\bigr)
+  =\prod_{t\in T_0}\bigl(\wp_\Lambda(z)-\wp_\Lambda(w+t)\bigr).
+\tag{2}
+$$
+On $\mathbb C/\Lambda$ the function $\wp_\Lambda(z)-\wp_\Lambda(a)$, for $a\notin\Lambda$, has one double pole at zero and zeros at $\pm a$, each simple if they differ and one double zero if they coincide. Indeed $\wp_\Lambda$ is an even elliptic function with the one double pole, so the zeros just identified have the full degree of its pole divisor, with a double zero at a fixed point by evenness around that fixed point. The same fact holds for $\Lambda'$. Consequently the first factor on the left of (2), viewed on the smaller lattice, has a double pole at each class of $\Lambda'/\Lambda$ and a double zero at each class of $w+\Lambda'/\Lambda$. The product over $T$ cancels these double poles at every nonzero class of $\Lambda'/\Lambda$: both signs are counted as $t$ varies, with a single double zero if a class equals its negative. It also adds pole order $2|T|$ at zero. The right side has precisely the same zero classes with their doubled orders, since $w+\Lambda'/\Lambda$ is also stable by negation as $2w\in\Lambda$. Its entire pole order is $2|T_0|$ at zero. Thus their quotient is a nonvanishing holomorphic function on a compact torus and is constant. The leading coefficient of each side at zero is $1$, from the term $z^{-2}$ of each Weierstrass function. This proves (2). [Half-period product formula](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/WeierstrassPSuperlatticeHalfPeriodProd.lean#L120)
+
+### Distances are read on the good model
+
+On a good integral Weierstrass model, reduction is injective on the subgroup killed by an integer $m$ prime to $q$. The kernel of reduction is the formal group at the identity. Its parameter is of norm less than one and multiplication by $m$ has linear coefficient $m$ and integral higher coefficients. If the parameter is nonzero, the linear term strictly dominates the higher terms, so this part of the kernel has no $m$-torsion. Applying this to a difference proves injectivity. A nonzero $m$-torsion point thus has integral affine coordinates, since it reduces to an affine point in the projective Weierstrass model. Two such points $a,b$ with $a\not\equiv\pm b\bmod\Lambda$ have distinct reduced $x$-coordinates. Equal $x$-coordinates on the reduced curve would give equal or inverse points, since the equation for $y$ on an affine fiber is quadratic and its two roots are related by inversion. That is excluded by injectivity of reduction on the torsion group. Hence their transported $x$-difference has norm one, and their $\wp_\Lambda$-difference has norm $|\iota(c)|_q^2$. [Unit distances from torsion reduction](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NormDiscriminantSuperlatticeOddIndexEq.lean#L122) · [Torsion reduction proof](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/MulPowTwoLeTripleProdOfGe.lean#L415)
+
+Choose representatives $w_1,w_2,w_3$ of the three nonzero half-period classes modulo $\Lambda$. They remain nonzero and distinct modulo $\Lambda'$ because $N$ is odd and $\Lambda'/\Lambda$ is killed by $N$. Fix $i\ne j$ and evaluate (2) at $w_i$ with $w=w_j$. All arguments in the $\wp_\Lambda$ factors are nonzero classes killed by $2N$, which is prime to $q$. Moreover the $w_i$ and $t\in T$ arguments cannot be equal up to sign modulo $\Lambda$, since $w_i\notin\Lambda'$. Nor can $w_i\equiv\pm(w_j+t)\bmod\Lambda$, since $w_i,w_j$ are different half-period classes modulo $\Lambda'$. Each $\wp_\Lambda$ difference in (2) therefore has norm $|\iota(c)|_q^2$. After dividing the products one obtains
+$$
+ |\iota(\wp_{\Lambda'}(w_i)-\wp_{\Lambda'}(w_j))|_q
+  =|\iota(c)|_q^2
+  =|\iota(\wp_\Lambda(w_i)-\wp_\Lambda(w_j))|_q .
+\tag{3}
+$$
+For either lattice the values at its nonzero half-periods are the three distinct roots of $4X^3-g_2 X-g_3$, since $\wp'$ vanishes there. For roots $e_1,e_2,e_3$ the lattice discriminant is $16\prod_{i<j}(e_i-e_j)^2$, by comparing with the discriminant of the monic cubic. Insert (3) for the three pairs to prove (1). [Half-period difference estimates](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NormDiscriminantSuperlatticeOddIndexEq.lean#L139) · [Discriminant of the three roots](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NormDiscriminantSuperlatticeOddIndexEq.lean#L26)
+
+### Applying the equality to the CM ideal and proving algebraicity
+
+Put $N=N(\mathfrak c)$, so $N\mathcal O_K\subseteq\mathfrak c\subseteq\mathcal O_K$. We may apply (1) with $\Lambda=\delta_0 N\mathcal O_K$ and $\Lambda'=\delta_0\mathfrak c$. To verify the good-model hypothesis at any odd $q$, start with the normalized lattice $\delta_0\mathcal O_K$ of discriminant $1$. Its $j$-invariant is an algebraic integer by the classical singular-modulus theorem, stated in [the good reduction proof](why-the-cm-lattice-has-an-unramified-good-model.md#the-classical-singular-modulus-input). Transport the three roots of its cubic by $\iota$, translate one root to zero, and call the two translated nonzero roots $\alpha,\beta$. This gives $y^2=x(x-\alpha)(x-\beta)$, of discriminant $16\alpha^2\beta^2(\alpha-\beta)^2=1$. Its $c_4=16(\alpha^2-\alpha\beta+\beta^2)$ is integral because its cube is $j$. If the larger of $|\alpha|_q,|\beta|_q$ is greater than one and they differ, the square of the larger strictly dominates the other terms in $c_4/16$. If both equal $M>1$, the discriminant gives $|\alpha-\beta|_q=M^{-2}$ since $q$ is odd. Then $(\alpha-\beta)^2+\alpha\beta$ has norm $M^2$, also impossible. Hence both roots are integral and this is a good model with the prescribed invariants. Scaling the lattice by $N$ can be absorbed by the linking scalar $c\mapsto c/N$, since the lattice invariants scale by degrees $-4,-6$. This gives the required good model for $\Lambda$. [The source's good model theorem](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsGoodReductionAlgebraicWeierstrassModel.lean#L35) · [Scaling the model](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DiscOneScaleRatioIdealRingAlgebraicUnit.lean#L58)
+
+Now $\Delta(\Lambda)=N^{-12}$ and $\Delta(\Lambda')=(\delta/\delta_0)^{12}$ by the homogeneity of the lattice invariants. Since $N$ is prime to $q$, equation (1) proves the norm claim. There is also a direct algebraicity argument. The normalized principal invariants $g_2,g_3$ are algebraic, since $j=1728g_2^3$ and $27g_3^2=g_2^3-1$. The invariants of $\Lambda$ are then algebraic since it scales this lattice by an integer. The $\wp_\Lambda$ values at the finitely many torsion arguments used in (2) are algebraic, since they are affine coordinates of torsion on the Weierstrass elliptic curve over $\overline{\mathbb Q}$. Indeed the multiplication-by-$2N$ map is algebraic and its kernel finite, so its points are algebraic over the field of the coefficients. Thus the nonzero denominator in (2) shows every difference $\wp_{\Lambda'}(w_i)-\wp_{\Lambda'}(w_j)$ used in (3) is algebraic. Their discriminant product gives algebraicity of $(\delta/\delta_0)^{12}$, hence of $\delta/\delta_0$. This finishes the scale comparison for [the scalar moment proof](scaling-the-cm-curve-ideal-theta-gives-integral-moments.md). [Norm of the ideal discriminant relative to the principal one](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DiscOneScaleRatioIdealRingAlgebraicUnit.lean#L71)
+
+## Source and verification
+
+The divisor comparison and torsion distance calculation were checked against the pinned source. The argument above uses the translated-root construction of a good model at odd $q$ and deduces algebraicity directly from the same half-period formula. Lean instead obtains algebraicity from the norm condition under every coefficient isomorphism and constructs its good model from an integral discriminant-one curve. No Lean replay or axiom check was performed for this note.
+
+Status. Source-based reconstruction draft. The [Lean verification record](../../STATUS.md#lean-verification--lean-核验) describes the published formal proof.

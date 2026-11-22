@@ -208,6 +208,9 @@ The topics and entries below follow the order of the Chinese catalogue.
 
 ### The split theta translation laws
 
+- [A prime-to-q multiple clears the Hermitian dual basis](proofs/en/a-prime-to-q-multiple-clears-the-hermitian-dual-basis.md) · Source-based reconstruction draft. Clearing denominators in a dual frame produces integral directions without a loss at the split prime.
+- [A split CM idempotent represents every good theta lift](proofs/en/a-split-cm-idempotent-represents-every-good-theta-lift.md) · Source-based reconstruction draft. The allowed torsion lifts are represented by the split idempotent, with matching phase and bracket.
+- [Good-lift Weyl phases preserve Taylor algebraicity](proofs/en/good-lift-weyl-phases-preserve-taylor-algebraicity.md) · Source-based reconstruction draft. Rational Heisenberg phases and algebraic direction data transport the Taylor jets.
 - [The discriminant forces the translated coordinate to have unit norm](proofs/en/the-discriminant-forces-the-translated-coordinate-to-have-unit-norm.md) · Source-based reconstruction draft. Read two coefficients of the translated coordinate and use the unit discriminant to bound its denominator.
 - [A CM theta norm quotient is an integral unit](proofs/en/a-cm-theta-norm-quotient-is-an-integral-unit.md) · Source-based reconstruction draft. Exclude small poles on both quotients and use the multiplicative Gauss norm.
 - [Two CM multipliers determine the unshifted theta translation](proofs/en/two-cm-multipliers-determine-the-unshifted-theta-translation.md) · Source-based reconstruction draft. Compare the analytic shift with the Weyl translate, then remove the remaining root of unity.
@@ -228,6 +231,14 @@ The topics and entries below follow the order of the Chinese catalogue.
 
 ### The split multiplicative chart and bounded theta moments
 
+- [Binomial jet integrality survives products, pullbacks, and tensor descent](proofs/en/binomial-jet-integrality-survives-products-pullbacks-and-tensor-descent.md) · Source-based reconstruction draft. Binomial jets give the closure operations needed in theta transport.
+- [An orthogonal unit frame gives the split moment coordinates](proofs/en/an-orthogonal-unit-frame-gives-the-split-moment-coordinates.md) · Source-based reconstruction draft. A nondegenerate residue form constructs an orthogonal unit basis and an invertible moment coordinate change.
+- [An odd prime-to-q superlattice preserves the discriminant norm](proofs/en/an-odd-prime-to-q-superlattice-preserves-the-discriminant-norm.md) · Source-based reconstruction draft. A half-period product and prime-to-q torsion reduction preserve the discriminant norm.
+- [Scaling the CM curve-ideal theta gives integral moments](proofs/en/scaling-the-cm-curve-ideal-theta-gives-integral-moments.md) · Source-based reconstruction draft. Compare two scalar quotient expansions to transfer moments from the principal curve.
+- [The split determinant correction makes the fourfold theta scalar a unit](proofs/en/the-split-determinant-correction-makes-the-fourfold-theta-scalar-a-unit.md) · Source-based reconstruction draft. The split determinant correction cancels the valuation of the fourfold averaging scalar.
+- [Integral elliptic translates give the single-entry theta moments](proofs/en/integral-elliptic-translates-give-the-single-entry-theta-moments.md) · Source-based reconstruction draft. The fourfold isometry and integral binomial jets descend the scalar bound to one host entry.
+- [Unitary pullback gives integral moments for a normalized theta translate](proofs/en/unitary-pullback-gives-integral-moments-for-a-normalized-theta-translate.md) · Source-based reconstruction draft. The standard tensor bound transfers to the pair by unitary covariance and finite averaging.
+- [The curve ideal norm fixes the moment pairing scale](proofs/en/the-curve-ideal-norm-fixes-the-moment-pairing-scale.md) · Source-based reconstruction draft. The curve ideal norm and the discriminant ratio give the exact scale in the transported pairing.
 - [Bounded binomial moments determine a p-adic measure](proofs/en/bounded-binomial-moments-determine-a-p-adic-measure.md) · Source-based reconstruction draft. Forward differences tend to zero, and the binomial test functions recover the exact operator bound.
 - [Multiplicative shifts turn theta jets into moments](proofs/en/multiplicative-shifts-turn-theta-jets-into-moments.md) · Source-based reconstruction draft. The operator $(1+X)d/dX$ identifies a root-of-unity twist of a measure with a shifted theta derivative.
 - [Prime-to-p translation preserves theta measure norm](proofs/en/prime-to-p-translation-preserves-theta-measure-norm.md) · Source-based reconstruction draft. An isometric coefficient comparison works in an orthogonal frame, and dual directions identify the norm bound with lattice integrality.
