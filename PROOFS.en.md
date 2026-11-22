@@ -256,6 +256,10 @@ The topics and entries below follow the order of the Chinese catalogue.
 
 ### Word-prime moment operators and the Weyl lattices
 
+- [Normalized hyperplane branching preserves the integral Weyl lattice](proofs/en/normalized-hyperplane-branching-preserves-the-integral-weyl-lattice.md) · Source-based reconstruction draft. Transpose the integral Capelli inclusion by the normalized factorial pairing.
+- [A Capelli product gives an integral branching inclusion](proofs/en/a-capelli-product-gives-an-integral-branching-inclusion.md) · Source-based reconstruction draft. A Capelli product selects the interlacing summand while preserving integral coefficients.
+- [The shifted column determinant commutes with column operators](proofs/en/the-shifted-column-determinant-commutes-with-column-operators.md) · Source-based reconstruction draft. The shifted determinant is central by cancellation of row and column replacements.
+- [The normalized factorial pairing dualizes the two Weyl lattices](proofs/en/the-normalized-factorial-pairing-dualizes-the-two-weyl-lattices.md) · Source-based reconstruction draft. Evaluation and triangular coefficients give both integral lattice dualities.
 - [Maximal row height gives a dominant highest vector](proofs/en/maximal-row-height-gives-a-dominant-highest-vector.md) · Source-based reconstruction draft. A strict inclusion of stable polynomial spaces yields a dominant row weight killed by every raising operator in the quotient.
 - [Traces of operator powers detect the highest weight](proofs/en/traces-of-operator-powers-detect-the-highest-weight.md) · Source-based reconstruction draft. A commutator recursion computes the trace on a highest vector over any ring and then on the entire dual Weyl space.
 - [Shifted residues force simplicity in the lowest alcove](proofs/en/shifted-residues-force-simplicity-in-the-lowest-alcove.md) · Source-based reconstruction draft. A generating function recovers the shifted highest weight in the closed lowest alcove and rules out any proper nonzero submodule.
@@ -369,6 +373,12 @@ The topics and entries below follow the order of the Chinese catalogue.
 
 ### The split auxiliary-prime theta bound
 
+- [One prime-to-$p$ integer clears both lattice inclusions](proofs/en/one-prime-to-p-integer-clears-both-lattice-inclusions.md) · Source-based reconstruction draft. Clear both commensurability indices by one integer prime to the distinguished prime.
+- [The type prime occurs on one side of the theta level](proofs/en/the-type-prime-occurs-on-one-side-of-the-theta-level.md) · Source-based reconstruction draft. The selected local row contains exactly one conjugate side of each type prime.
+- [Choosing a $p$-adic embedding for the coefficient valuation](proofs/en/choosing-a-p-adic-embedding-for-the-coefficient-valuation.md) · Source-based reconstruction draft. Realize a prescribed coefficient prime by a norm comparison with the analytic model.
+- [The split generator lies in the quadratic order](proofs/en/the-split-generator-lies-in-the-quadratic-order.md) · Source-based reconstruction draft. The generator norm relation forces half-integral coordinates of the correct parity.
+- [The integral eigendirection generator is a local unit](proofs/en/the-integral-eigendirection-generator-is-a-local-unit.md) · Source-based reconstruction draft. Separate the reductions of the embeddings to produce a unit in one coordinate.
+- [The local split jet bounds the arithmetic type-prime table](proofs/en/the-local-split-jet-bounds-the-arithmetic-type-prime-table.md) · Source-based reconstruction draft. Use the local split bound at the intermediate level and then descend to the global table.
 - [A unit CM multiplier gives integral torsion coordinates](proofs/en/a-unit-cm-multiplier-gives-integral-torsion-coordinates.md) · Source-based reconstruction draft. Uses the isogeny product and reduction of formal series to control the kernel of a CM multiplier that is a local unit.
 - [Taking a logarithmic derivative pays for p-power torsion](proofs/en/taking-a-logarithmic-derivative-pays-for-p-power-torsion.md) · Source-based reconstruction draft. Deduces the precise factor per derivative when the integer annihilating the translate can be divisible by p.
 - [A prime-to-p lattice index transfers scaled derivatives](proofs/en/a-prime-to-p-lattice-index-transfers-scaled-derivatives.md) · Source-based reconstruction draft. Uses the finite fourfold identity to transport an integer scaling bound from one-variable CM translates to every host direction.
