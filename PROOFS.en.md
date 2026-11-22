@@ -8,6 +8,7 @@ Each paired entry links to the full Chinese note and its English rendering. Stat
 
 ### Simultaneous family construction
 
+- [Tame inertia makes the first-block Euler factors units](proofs/en/tame-inertia-makes-the-first-block-euler-factors-units.md) · Source-based reconstruction draft. Uses one residual inertia class to keep the base evaluations of both the toric and Hecke determinant constructions at their original valuations.
 - [Removing auxiliary primes factors the Hecke determinant](proofs/en/removing-auxiliary-primes-factors-the-hecke-determinant.md) · Source-based reconstruction draft. Constructs the Hecke polynomial family, bounds the residual orders of its factors, and converts its specialization to a signed lattice-index bound.
 - [A universal matrix specializes to the twisted Selmer length](proofs/en/a-universal-matrix-specializes-to-the-twisted-selmer-length.md) · Source-based reconstruction draft. Constructs the determinant polynomial from a universal Selmer presentation and identifies every specialization with a normalized length.
 - [Removing auxiliary primes gives the toric polynomial factor](proofs/en/removing-auxiliary-primes-gives-the-toric-polynomial-factor.md) · Source-based reconstruction draft. Constructs the integral toric evaluation polynomial and derives its prescribed factor modulo the cyclotomic relations.

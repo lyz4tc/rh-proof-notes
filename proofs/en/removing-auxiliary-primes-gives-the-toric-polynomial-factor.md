@@ -11,7 +11,7 @@ $$
 \qquad w=q^{-s}.
 $$
 
-Here $q$ is the norm of the auxiliary prime, $s$ is the evaluation weight, and $y=(\lambda\psi)(\operatorname{Frob}_P)$ at the indicated prime $P$. Every $q$ is $1\bmod 2n$, so $w\in O^\times$ has residue $1$. The auxiliary-coordinate hypotheses give two facts used below. When the last $R$ coordinates of $\psi$ are trivial, its value on the Frobenius at position $R+j$ is its first-block coordinate $u_j$. At each first-block prime the value of $\lambda$ on the indicated Frobenius has residue different from $1$.
+Here $q$ is the norm of the auxiliary prime, $s$ is the evaluation weight, and $y=(\lambda\psi)(\operatorname{Frob}_P)$ at the indicated prime $P$. Every $q$ is $1\bmod 2n$, so $w\in O^\times$ has residue $1$. The auxiliary-coordinate hypotheses give two facts used below. When the last $R$ coordinates of $\psi$ are trivial, its value on the Frobenius at position $R+j$ is its first-block coordinate $u_j$. At each first-block prime the value of $\lambda$ on the indicated Frobenius has residue different from $1$, by the [tame inertia comparison](tame-inertia-makes-the-first-block-euler-factors-units.md).
 
 **Proposition.** There are integral polynomials $f(X,Y)$, $g(X)$ whose evaluations at $X_j=u_j-1$, $Y_j=u_{R+j}-1$, for $n$-th roots of unity $u_j$, give the cleared toric evaluations on the full support and the first support, respectively. There is an integral polynomial $D(X)$ such that
 
