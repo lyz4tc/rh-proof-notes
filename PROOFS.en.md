@@ -8,6 +8,11 @@ Each paired entry links to the full Chinese note and its English rendering. Stat
 
 ### Simultaneous family construction
 
+- [Finite projections determine the adelic norm-orbit measure](proofs/en/finite-projections-determine-the-adelic-norm-orbit-measure.md) · Source-based reconstruction draft. Push forward from integral tails, use local transitivity, and recover one scalar from the compatible finite products.
+- [A denominator sequence gives the full growth of the local density product](proofs/en/a-denominator-sequence-gives-the-full-growth-of-the-local-density-product.md) · Source-based reconstruction draft. Enlarge the boxes at a fixed set of good places while leaving the remaining product unchanged.
+- [Primitive residue vectors control all nonzero integral norm densities](proofs/en/primitive-residue-vectors-control-all-nonzero-integral-norm-densities.md) · Source-based reconstruction draft. Treat the zero residue class by a dilation recursion after counting all smooth residue vectors.
+- [A dilation fixes the scalar in the one-vector Siegel mean](proofs/en/a-dilation-fixes-the-scalar-in-the-one-vector-siegel-mean.md) · Source-based reconstruction draft. Compare the invariant product measure with a Gaussian count as the denominator box grows faster than its error.
+- [One-by-one Gram fibres give the measurable norm mean](proofs/en/one-by-one-gram-fibres-give-the-measurable-norm-mean.md) · Source-based reconstruction draft. Identify the Hermitian target with the norm line and extend from smooth tests by equality of measures.
 - [Two evaluations of the one-vector mean give the volume ratio](proofs/en/two-evaluations-of-the-one-vector-mean-give-the-volume-ratio.md) · Source-based reconstruction draft. The nonzero norm-fibre integral cancels after the global mean is evaluated by unfolding and by Siegel–Weil.
 - [Unfolding a unit-norm orbit leaves the complement volume](proofs/en/unfolding-a-unit-norm-orbit-leaves-the-complement-volume.md) · Source-based reconstruction draft. Tonelli opens the rational orbit and the self-dual finite level has quotient mass one.
 - [The compact dual normalizes the real unitary quotient](proofs/en/the-compact-dual-normalizes-the-real-unitary-quotient.md) · Source-based reconstruction draft. Compare the tangent densities at the identity and calibrate the common constant on the positive definite unit sphere.
