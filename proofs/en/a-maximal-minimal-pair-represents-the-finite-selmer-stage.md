@@ -1,0 +1,24 @@
+# A largest minimal pair represents the finite Selmer stage
+
+[Proof catalogue](../../PROOFS.en.md) · [Reading and review status](../../STATUS.md)
+
+Let $(\Lambda,\mathfrak m,k)$ be a Noetherian local ring with finite residue field. A torsion module here is a $\Lambda$-module in which each element is killed by some power of $\mathfrak m$. Let $F$ be a $\Lambda$-linear left-exact functor from torsion $\Lambda$-modules to $\Lambda$-modules, and assume $F(k)$ is finite. Left exactness here supplies the exact sequence $0\to F(\ker f)\to F(A)\to F(B)$ for each map $f:A\to B$ of torsion modules.
+
+**Proposition.** For every integer $n\ge0$, there is a finite $\Lambda$-module $M_n$ killed by $\mathfrak m^n$ and an element $\xi_n\in F(M_n)$ such that, for every finite $B$ killed by $\mathfrak m^n$, the map
+
+$$
+\operatorname{Hom}_\Lambda(M_n,B)\longrightarrow F(B),
+\qquad f\longmapsto F(f)\xi_n
+$$
+
+is a natural isomorphism. For an arbitrary torsion target $B$, the same map is injective.
+
+**Proof.** Call a pair $(A,x)$, with $x\in F(A)$, minimal when $F(f)x=0$ implies $f=0$ for every map $f:A\to B$ into a torsion module. Every element $x$ of $F(A)$ for finite $A$ comes from a minimal pair on a submodule of $A$. Indeed, choose a submodule $C\subseteq A$ of smallest cardinality such that $x=F(C\hookrightarrow A)z$ for some $z\in F(C)$. If $F(f)z=0$, left exactness writes $z$ as an image from $F(\ker f)$. The composite inclusion $\ker f\subseteq C\subseteq A$ then carries $x$. Minimal cardinality gives $\ker f=C$, so $f=0$.
+
+Fix $n$. For a minimal finite pair $(A,x)$ killed by $\mathfrak m^n$, evaluation at $x$ injects $\operatorname{Hom}_\Lambda(A,k)$ into $F(k)$: equal evaluations give a difference that kills the distinguished element. Since every map $A\to k$ factors through $A/\mathfrak m A$, this bounds the dimension of $A/\mathfrak m A$ by $d=\dim_k F(k)$. Here $F(k)$ is a $k$-vector space since, for $r\in\mathfrak m$, linearity gives $r\,\mathrm{id}_{F(k)}=F(r\,\mathrm{id}_k)=0$. By Nakayama, $A$ is a quotient of $(\Lambda/\mathfrak m^n)^d$. The ring $\Lambda/\mathfrak m^n$ is finite because its successive quotients by powers of $\mathfrak m$ are finite-dimensional over the finite field $k$. Thus the cardinalities of all such pairs have one finite upper bound. There is at least the zero pair. Choose $(M_n,\xi_n)$ of largest cardinality among the minimal pairs at this level.
+
+Given any finite $B$ killed by $\mathfrak m^n$ and $\eta\in F(B)$, form the element of $F(M_n\oplus B)$ that is the sum of the images of $\xi_n$ and $\eta$ under the inclusions. By the first step it comes from $(C,z)$, a minimal pair on a submodule $C\subseteq M_n\oplus B$. Write $p:C\to M_n$ and $q:C\to B$ for the two projections. Additivity gives $F(p)z=\xi_n$ and $F(q)z=\eta$. The quotient map $M_n\to M_n/p(C)$ kills $\xi_n$ after applying $F$, since its composite with $p$ is zero. Minimality of $(M_n,\xi_n)$ forces the quotient map to be zero, so $p$ is surjective. The module $C$ is finite and killed by $\mathfrak m^n$. By maximality of $M_n$ its cardinality is at most that of $M_n$, making $p$ an isomorphism. Consequently $F(qp^{-1})\xi_n=\eta$. Injectivity on any torsion target follows from minimality and linearity, and evaluation commutes with maps of targets. This proves the proposition.
+
+**Lean correspondence.** The smallest submodule is `exists_min`, the cardinality bound is `card_le_of_min`, and the largest minimal pair and direct-sum argument give `level`. The bound stated above uses the dimension of $F(k)$, whereas the source uses its cardinality as a sufficient generator bound. This proves the finite-stage input used before taking compatible generators and assembling the representing module for all torsion coefficients. The [square presentation](a-selmer-obstruction-bound-makes-the-presentation-square.md) uses a further cohomological bound after that assembly. Source-based reconstruction. [Minimal submodule carrying the distinguished element](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LeftExactFunctorRepresentableTorsionModules.lean#L21) · [Uniform bound for finite minimal pairs](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LeftExactFunctorRepresentableTorsionModules.lean#L50) · [Representability at each finite level](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LeftExactFunctorRepresentableTorsionModules.lean#L84).
+
+Status. Source-based reconstruction draft. The [Lean verification record](../../STATUS.md#lean-verification--lean-核验) describes the published formal proof.

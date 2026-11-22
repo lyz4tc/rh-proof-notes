@@ -8,6 +8,7 @@ Each paired entry links to the full Chinese note and its English rendering. Stat
 
 ### Simultaneous family construction
 
+- [A largest minimal pair represents the finite Selmer stage](proofs/en/a-maximal-minimal-pair-represents-the-finite-selmer-stage.md) · Source-based reconstruction draft. Proves finite-stage representability for a left-exact torsion functor by bounding its minimal pairs and combining two distinguished elements.
 - [A Selmer obstruction bound makes the presentation square](proofs/en/a-selmer-obstruction-bound-makes-the-presentation-square.md) · Source-based reconstruction draft. Injects the dual of the minimal relation space into one obstruction quotient, then uses Nakayama to obtain a square matrix.
 - [Tame inertia makes the first-block Euler factors units](proofs/en/tame-inertia-makes-the-first-block-euler-factors-units.md) · Source-based reconstruction draft. Uses one residual inertia class to keep the base evaluations of both the toric and Hecke determinant constructions at their original valuations.
 - [Removing auxiliary primes factors the Hecke determinant](proofs/en/removing-auxiliary-primes-factors-the-hecke-determinant.md) · Source-based reconstruction draft. Constructs the Hecke polynomial family, bounds the residual orders of its factors, and converts its specialization to a signed lattice-index bound.
