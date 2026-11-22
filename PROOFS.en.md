@@ -245,6 +245,13 @@ The topics and entries below follow the order of the Chinese catalogue.
 
 ### Covariance of the point kernels
 
+- [The twist chart bounds give the entry support and period](proofs/en/the-twist-chart-bounds-give-the-entry-support-and-period.md) · Source-based reconstruction draft. Carry support and matrix periods through the bounded source and target charts.
+- [Why the twist unfolding stabilizes as the box grows](proofs/en/why-the-twist-unfolding-stabilizes-as-the-box-grows.md) · Source-based reconstruction draft. The support kills the extra denominator classes and the period cancels the box repetition.
+- [Putting a bounded twist lattice in flag normal form](proofs/en/putting-a-bounded-twist-lattice-in-flag-normal-form.md) · Source-based reconstruction draft. Choose a triangular basis in the flag and obtain an integral projected stabilizer.
+- [Bounded twist double cosets give finite chart labels](proofs/en/bounded-twist-double-cosets-give-finite-chart-labels.md) · Source-based reconstruction draft. A residue of the bounded matrix determines its right level coset, so one can choose finitely many labels.
+- [An affine change of unfolding variables contributes a determinant factor](proofs/en/an-affine-change-of-unfolding-variables-contributes-a-determinant-factor.md) · Source-based reconstruction draft. Count the period classes in an affine preimage by its determinant index.
+- [Changing the target double coset representative preserves nonvanishing](proofs/en/changing-the-target-double-coset-representative-preserves-nonvanishing.md) · Source-based reconstruction draft. The change of chart contributes only nonzero phase and determinant factors.
+- [A nonzero unfolding descends the twist level character](proofs/en/a-nonzero-unfolding-descends-the-twist-level-character.md) · Source-based reconstruction draft. Cancel a nonzero unfolded value to descend a character to the projected level.
 - [Hecke character normalizations are units away from their prime](proofs/en/hecke-character-normalizations-are-units-away-from-their-prime.md) · Source-based reconstruction draft. Raise a Hecke character value to a power supported at one finite prime and use its infinity type.
 - [The unipotent volume denominator is a power of the local prime](proofs/en/the-unipotent-volume-denominator-is-a-power-of-the-local-prime.md) · Source-based reconstruction draft. Bound each element's power in the integral subgroup and compute the relative index in the finite quotient.
 - [Twist-place entries are integral at the word prime](proofs/en/twist-place-entries-are-integral-at-the-word-prime.md) · Source-based reconstruction draft. Control the square-root, character and volume factors at the coefficient prime, then use the matrix periods.

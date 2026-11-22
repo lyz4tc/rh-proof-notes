@@ -4,7 +4,7 @@
 
 ## Statement
 
-Take a word $u$, a tuple used in the row (the base tuple or one prescribed at a place), an auxiliary prime $p=g_i\ne T_u$, and a finite place $w\mid p$ of the coefficient field $K$. Let $\nu_w=v_w/e_w$ be the normalized valuation, with $e_w=v_w(p)>0$ and $\nu_w(0)=+\infty$. The host CM field is $E$, the number of chosen embeddings is $f=[E:\mathbb Q]/2$, the chain has ranks $N_j$ and $m$ steps, and $t$ is its odd rank increment. Write $\bar\pi_\tau\in K$ for the image of the conjugate of the split generator $\pi=\pi_i$, with $\pi\bar\pi=p$. Define $d_{j,\tau}\ge0$ to be the natural polynomial degree in embedding $\tau$ at lift $j$ (the size of its partition), for $1\le j\le m$. Put
+Take a word $u$, a tuple used in the row (the base tuple or one prescribed at a place), an auxiliary prime $p=g_i\ne T_u$, and a finite place $w\mid p$ of the coefficient field $K$. Let $\nu_w=v_w/e_w$ be the normalized valuation, with $e_w=v_w(p)>0$ and $\nu_w(0)=+\infty$. The host CM field is $E$, the number of chosen embeddings is $f=[E:\mathbb Q]/2$, the chain has ranks $N_j$ and $m$ steps, and $t$ is the odd parameter giving rank increment $t+1$. Write $\bar\pi_\tau\in K$ for the image of the conjugate of the split generator $\pi=\pi_i$, with $\pi\bar\pi=p$. Define $d_{j,\tau}\ge0$ to be the natural polynomial degree in embedding $\tau$ at lift $j$ (the size of its partition), for $1\le j\le m$. Put
 $$
 V_j=\sum_\tau d_{j,\tau}\nu_w(\bar\pi_\tau),\qquad
 E_C=f\bigl(m N_m(N_m+t)+m^3\eta_{\rm Sz}\bigr),\qquad\eta_{\rm Sz}\ge0 .
