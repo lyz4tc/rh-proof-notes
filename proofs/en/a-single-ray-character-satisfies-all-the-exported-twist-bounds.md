@@ -1,0 +1,45 @@
+# A single ray character satisfies all the exported twist bounds
+
+[Proof catalogue](../../PROOFS.en.md) · [Reading and review status](../../STATUS.md)
+
+Fix one nonzero twist index $i$ of the first core, of residue characteristic $\ell$, a positive tolerance $\varepsilon'$, and a finite exclusion set $A_0$ of host primes. At each layer $1\le j\le m$ and on each of the two sides, use a finite theta basis of the untwisted full-rank integral form space. Its level primes must also be excluded. The assertion to prove is the first-pass export at this index: one finite support $Q$, root level $k$ and ray character $\psi$ satisfy the four kinds of bounds below for every power $\psi^a$ with $\gcd(|a|,\ell)=1$. Both $Q$ and $k$ are fixed before quantifying over $a$.
+
+The determinant input consists of the following three polynomial families at each sufficiently large auxiliary level $M$, in variables indexed by the members of an auxiliary prime family. These data are supplied by the Selmer presentation and residual bounds, the toric denominator comparison, and the Hecke relation and specialization, respectively.
+
+- For each good signature $s$, a Selmer determinant has a coefficient of bounded degree and integral valuation at most $\nu\,v_{O_0}(\ell)$, where $\nu$ is the common Selmer baseline attached to $i$. Its nonzero evaluated valuation in the normalization $v_\ell(\ell)=1$ is the twisted Selmer length at that signature.
+- For each toric character $\lambda$, there is a polynomial satisfying the monomial-factor hypothesis of [the common cyclotomic-level theorem](one-cyclotomic-level-controls-selmer-toric-and-hecke-determinants.md), with constant-coefficient valuation allowance $v_\lambda$. Its value is $\ell^{N_\lambda}$ times the toric evaluation, with $0\le N_\lambda\le N_0$ and $v_\lambda/v_O(\ell)=N_\lambda+c_\lambda$. Here $N_0$ is the previously fixed denominator bound and $c_\lambda$ is the toric baseline.
+- For each layer and side there is a Hecke polynomial with the same monomial-factor property. Its nonzero evaluation, measured relative to the corresponding constant-coefficient baseline, bounds the excess in the signed lattice index for any full lattice containing the specialized projected basis. The coefficient comparison holds for allowed auxiliary primes outside the finite level supports of the chosen bases.
+
+For the first input the source identifies a normalized determinant valuation with the length of its specialized Selmer presentation. The odd residual and $2$-adic cases provide the low-degree coefficient bound separately. All three inputs have to hold on the same family of primes. The Selmer auxiliary-prime theorem gives the family at level $M$ with $2R$ distinguished positions, for a number $R$ fixed before $M$. Intersect the finitely many open normal step subgroups required by the toric and Hecke inputs. The intersection is still open and normal. Unite their finite forbidden lists with $A_0$ and the level-prime lists. Apply the auxiliary-prime choice with this subgroup and exclusion. It gives the common prime family, whose conjugate closure $Q$ has at most $4R$ primes. The associated cyclic coordinates $d_q$ take values in $\mathbb Z/\ell^M\mathbb Z$ and the map to these coordinates factors through the ray quotient for $Q$. At every prime of $Q$ the local inertia test has a witness evaluating just its assigned cyclic coordinate, up to inversion. These are the auxiliary-prime hypotheses used for the ramification bound.
+
+## Choose the specialization before choosing a power
+
+Let $\Sigma$ be the finite signature set, and $t$ the multiplier in the tame loss. Use
+$$
+ \varepsilon=\varepsilon'\big/(|\Sigma|+2m+4Rt+1).
+$$
+Apply the [common cyclotomic-level theorem](one-cyclotomic-level-controls-selmer-toric-and-hecke-determinants.md) to the three polynomial families, combining the toric and Hecke polynomials as its second family. This selects $M,k,e_q$ with $e_q<k\le M$, and all the required nonzero specializations. Choose a primitive $\ell^k$-th root $\zeta$ and define the character on the cyclic coordinates by
+$$
+ (x_q)_q\longmapsto \prod_q \left(\zeta^{\ell^{e_q}}\right)^{x_q}.
+$$
+It is well defined because each factor has order dividing $\ell^M$. Compose with the coordinate map from the ray quotient to get $\psi$. Raising to $a$ prime to $\ell$ replaces $\zeta$ by $\zeta^a$, which is still primitive. Reading the opposite side replaces it by its inverse, also primitive. The specialization theorem therefore gives all the same bounds for every power and side.
+
+The Selmer excess at a good signature is at most $\varepsilon$, by the determinant evaluation and the normalization of the baseline. The finite sum of excesses is at most $|\Sigma|\varepsilon\le\varepsilon'$. At a toric entry the valuation of the polynomial is nonnegative and at most $N_\lambda+c_\lambda+\varepsilon$. Dividing by $\ell^{N_\lambda}$ gives a nonzero evaluation of valuation between $-N_0$ and $c_\lambda+\varepsilon'$. The Hecke evaluations give excess at most $\varepsilon$ at each of the $2m$ layers and sides, for a sum at most $\varepsilon'$.
+
+For tame inertia the assigned root remains nontrivial at every prime of $Q$ since $e_q<k$. Its normalized difference valuation is
+$$
+ v_\ell(\zeta^{\ell^{e_q}}-1)
+ =\varphi(\ell^{k-e_q})^{-1}
+ =\ell^{e_q}/\varphi(\ell^k)\le\varepsilon .
+$$
+The same calculation applies to the primitive powers and inversions. The tame term, defined from the least valuation over nontrivial inertia readings, is bounded by this witness at each prime. Thus the total tame cost is bounded by $t|Q|\varepsilon\le4Rt\varepsilon\le\varepsilon'$. The ray quotient makes the character unramified off $Q$; the nontrivial inertia readings certify support at the primes of $Q$. The auxiliary-prime input also certifies triviality at the distinguished decomposition conditions of the source. This proves the four uniform bounds.
+
+Finally apply the [lattice-index argument](a-uniform-relative-index-bound-forces-theta-lattices-to-have-full-rank.md) to the Hecke bound. The integral multiple of the projector, finite theta basis and specialization identity give the full twisted lattices, their inclusion and the index bounds. The basis and rank conditions needed to start this process follow from rationality of the first core's series and the basis of its class sums. The source makes this construction at each nonzero twist index and packages the finite basis lists and bounds as `ExportAt`. That is the premise used to construct the [disjoint seed](the-first-pass-selects-disjoint-twist-supports-by-fixed-field-place.md).
+
+## Lean correspondence
+
+- [twistAllPowers_of_galoisCohomology_classField](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TwistAllPowersOfGaloisCohomologyClassField.lean#L20) combines the cohomological matrix theorem with the odd residual and $2$-adic bounds. [galois_twisted_selmer_auxprimes_of_matrix_and_bounds](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GaloisTwistedSelmerAuxprimesOfMatrixAndBounds.lean#L47) extracts the first polynomial family and its coefficient bound.
+- [psiOk_partD_root](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/AdmissibleIndexBoundAllPowersOfConditions.lean#L38) evaluates the inertia cost. [admissibleIndexBoundAllPowers_of_conditions](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/AdmissibleIndexBoundAllPowersOfConditions.lean#L92) selects one character, splits the tolerance and specializes every primitive power.
+- [twistModule_all_character_powers_of_admissible](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TwistModuleAllCharacterPowersOfAdmissible.lean#L17) gives the full lattice output. [exportAt_of_bundles_alt](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExportAtOfBundles.lean#L17) selects the bases and states the full-rank input used to assemble the export. [goodTwistExistsAllCoprimePowers](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Formalism/SharpRestriction/LevelLetterCocycles/ExistsGoodPlacesEveryConjugate.lean#L180) gives its exact quantifier order.
+
+Status. Source-based reconstruction draft. The [Lean verification record](../../STATUS.md#lean-verification--lean-核验) describes the published formal proof.
