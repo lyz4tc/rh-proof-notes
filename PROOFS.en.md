@@ -8,6 +8,9 @@ Each paired entry links to the full Chinese note and its English rendering. Stat
 
 ### Simultaneous family construction
 
+- [Self-dual Haar rescalings cancel in the adelic Gram mean](proofs/en/self-dual-haar-rescalings-cancel-in-the-adelic-gram-mean.md) · Source-based reconstruction draft. Use determinant scalars for the source and target pairings, each of product one.
+- [Unfolding the first vector inducts on the Gram rank](proofs/en/unfolding-the-first-vector-inducts-on-the-gram-rank.md) · Source-based reconstruction draft. Use the one-vector average to integrate complementary frame averages one row at a time.
+- [An orthogonal first vector splits the local Gram fibre measure](proofs/en/an-orthogonal-first-vector-splits-the-local-gram-fibre-measure.md) · Source-based reconstruction draft. Use the mixed Gram entries as coordinates and track their norm-line Jacobian.
 - [A Fourier coefficient converts the theta bound into a count error](proofs/en/a-fourier-coefficient-converts-the-theta-bound-into-a-count-error.md) · Source-based reconstruction draft. Scale one fixed test and read the two Fourier coefficients with matching Haar measures.
 - [Cuspidal cancellation bounds the weighted theta difference](proofs/en/cuspidal-cancellation-bounds-the-weighted-theta-difference.md) · Source-based reconstruction draft. Cancel the common constant and combine Gaussian counts, cusp bounds, and finitely many finite-adèlic test functions.
 - [Finite projections determine the adelic norm-orbit measure](proofs/en/finite-projections-determine-the-adelic-norm-orbit-measure.md) · Source-based reconstruction draft. Push forward from integral tails, use local transitivity, and recover one scalar from the compatible finite products.
