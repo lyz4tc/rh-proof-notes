@@ -1,0 +1,31 @@
+# A dual-number line gives the residual Selmer coefficient bound
+
+[Proof catalogue](../../PROOFS.en.md) · [Reading and review status](../../STATUS.md)
+
+Fix a twist coefficient ring $O_0$ with residue field $k$ of characteristic $\ell$, an integer $M\ge1$, and $R$ auxiliary positions in each block. Use the two-block auxiliary configuration, the matrix presentation, and the inputs of the [residual reciprocity test](reciprocity-bounds-the-residual-selmer-first-order-space.md). Suppose the coordinate characters $d_j:G_F\to\mathbb Z/\ell^M\mathbb Z$ are inverted by complex conjugation on $G_F$. At the selected second-block inertia element $\gamma_a$ only its own coordinate has value one, with every other coordinate zero. At the second-block Frobenius $\phi_a$, the first-block coordinates form the $a$-th standard basis vector. The remaining coordinates of $\phi_a$ may be arbitrary. Let $\Phi$ be an $s\times s$ universal matrix over the group ring, and $r$ the rank of the underlying Galois representation. Assume $4rR+2<\ell^M$.
+
+**Proposition.** If the residual reciprocity test has $e=0$, every polynomial lift of $\det\Phi$ has a unit coefficient in total degree at most $4rR$. If it has $e=1$ and $s>0$, there is a fixed entry of $\operatorname{adj}\Phi$ such that every polynomial lift of that entry has a unit coefficient in the same degree range.
+
+**Proof.** Lift each entry of $\Phi$ to a polynomial in the auxiliary variables using the surjective group-ring map. To choose a line in the variables write $K=k((Z))$. Let $\lambda_a=c_a^0/c_a\in k$ be the weights in the residual test and put $\beta_a=Z\lambda_a$. Write $\bar d_j$ for the reduction of a cyclic coordinate into $k$. For the line $X_j=b_j T$, take the second-block coefficients $b_{2,a}=\beta_a$ and the first-block coefficients
+
+$$
+ b_{1,a}=1-\sum_j\beta_j\,\bar d_{2,j}(\phi_a).
+$$
+
+Let $\Psi(T)$ be the polynomial matrix on this line. Its constant term is the residual augmentation matrix after extension from $k$ to $K$. Use a second parameter $\epsilon$ with $\epsilon^2=0$ and evaluate $T=\epsilon$. The group-ring character sending the $j$-th basis generator to $1+b_j\epsilon$ exists because these units have $\ell$-power order. The universal inverse twist at $g$ specializes to $1+\epsilon\eta(g)$, where $\eta(g)=-\sum_j b_j\bar d_j(g)$. The properties of the auxiliary positions give $\eta(\phi_a)=-1,\ \eta(\gamma_a)=-\beta_a$, and conjugation reverses both signs.
+
+Let $x_0+\epsilon x_1$ be a kernel vector of $\Psi(\epsilon)$. Naturality of the matrix presentation over the dual numbers supplies a corresponding global cocycle $w_0+\epsilon w_1$. On each of the second-block decomposition groups the original residual representation is trivial, so the cocycle law there has constant term additive and linear term
+$w_1(gh)=w_1(g)+w_1(h)+\eta(g)w_0(h)$. The [tame relation](a-tame-frobenius-relation-tests-dual-number-cocycles.md) applied at each chosen pair now gives
+
+$$
+ w_0(\gamma_a)=\beta_a w_0(\phi_a),\qquad
+ w_0(\gamma_a^c)=\beta_a w_0(\phi_a^c).
+$$
+
+The identical factors in the two equalities follow from reversal of both twist signs in the conjugate relation.
+
+For any $k$-linear functional $\pi:K\to k$, the map from the dual numbers to $k$ taking $v_0+\epsilon v_1$ to $\pi(v_0)$ is linear over the auxiliary group ring, with its action on $k$ through augmentation. The specialized generators act trivially on the constant term. By naturality, the residual kernel vectors $\pi(x_0)$ and $\pi(Zx_0)$ correspond to cocycles obtained componentwise from $w_0$ by $\pi$ and $v\mapsto\pi(Zv)$, respectively. Thus the previous equalities and $\beta_a=Z\lambda_a$ give $t(\pi x_0)=u(\pi(Zx_0))$ for the residual test maps. The [Laurent normalization argument](laurent-specialization-controls-the-residual-first-order-kernel.md) shows that the reductions $x_0$ of first-order kernel lifts form a space of dimension at most $e$. The constant kernel has dimension at most $2rR+e$ by the residual test and extension of scalars.
+
+The [determinant and cofactor bounds](first-order-kernel-lifts-control-determinants-and-cofactors.md) now apply to $\Psi(T)$. For $e=0$ the determinant has order at most $2rR$, hence at most $4rR$. For $e=1$ and $s>0$ there is an adjugate entry with order at most $4rR$. Determinants and adjugates commute with coefficient evaluation. Finally [evaluation modulo $T^{4rR+1}$](a-truncated-line-detects-a-low-unit-coefficient-of-any-lift.md) detects the same nonzero residue regardless of the chosen polynomial lift, since $4rR+1\le\ell^M$. This proves the two assertions.
+
+**Lean correspondence.** `exists_dualHom` constructs the evaluation on dual numbers, `core` chooses the Laurent-field line and proves its two kernel bounds, and `resBound` extracts the unit coefficient for the determinant and adjugate. In the odd-prime construction the pair selection is supplied by Chebotarev and the cohomological form-rank argument. In the dyadic construction the adjugate is used in the next step of a separate induction. Source-based reconstruction. [Dual-number evaluation](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ResidualSelmerDeterminantOrderBound.lean#L91) · [The Frobenius and inertia specialization](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ResidualSelmerDeterminantOrderBound.lean#L118) · [The two coefficient bounds](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ResidualSelmerDeterminantOrderBound.lean#L324) · [Application in the odd case](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ResidualBoundOfComponents.lean#L28) · [Use of the adjugate in the dyadic case](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/BoundModTwoUniformizerAtTwoOfChebotarev.lean#L25).
