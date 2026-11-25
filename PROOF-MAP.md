@@ -6,6 +6,18 @@ Read the arrows as dependencies between groups of arguments. Solid arrows corres
 
 实线表示笔记已展开的推导，各步仍须满足正文列出的假设。虚线表示文字稿仍在串联的上游联系。图中解析段的阅读入口以 RH 为例，RH 和狄利克雷 GRH 的最终陈述可在固定版本的 Lean 源码及核验报告中查阅。
 
+## Three inputs to Dirichlet nonvanishing
+
+The Lean theorem `every_character_of_green_v_win` takes three inputs.
+
+1. **Finite-field characters (`Green`).** Classify cuspidal characters of finite general linear groups using polynomial labels and obtain their values on elements with irreducible characteristic polynomial. [Deduction from Green's classical theorem](proofs/en/green-cuspidal-characters-by-polynomial-labels.md) · [Why the Lean construction exhausts the cuspidal characters](proofs/en/counting-exhausts-the-cuspidal-characters.md)
+2. **A cohomological window (`VWin`).** Bound the lengths of localization kernels throughout a common interval for the relevant abelian fields. This supplies candidate data for the window argument. [Window proof from the signed and dyadic bounds](proofs/en/cohomological-window.md)
+3. **Existence of compatible definite-side data (`HypsAlt`).** Construct a family on which the theta, local matching, and lattice estimates can be used together. This input and `Green` give the family comparison used in the prime-sum bound. [Lean construction](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean#L44-L67) · [Unfinished links in the exposition](STATUS.md#upstream-links-to-complete--待串联的上游证明)
+
+The cohomological and definite-side arguments share the construction of Galois representations with local–global compatibility (`Row0b`). The analytical deduction from the window bound uses the three assembled inputs. [Shared Galois input](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean#L7-L11) · [Lean theorem with three inputs](https://github.com/tamnd/riemann-lean/blob/9110120cdc195ee8d2fb08d2adac8b1747912d8f/lean/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean#L12-L18) · [Tam Nguyen Duc's guide to the same chain](https://riemann.tamnd.com/proof/trunk/)
+
+## Dependencies in the exposition
+
 ```mermaid
 flowchart TD
     period["Period bounds / 周期界"]

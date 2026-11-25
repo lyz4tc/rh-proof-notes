@@ -6,6 +6,11 @@ Each paired entry links to the full Chinese note and its English rendering. Stat
 
 ## New reconstruction from Lean
 
+### Finite-field character theory
+
+- [Green's cuspidal characters with polynomial labels](proofs/en/green-cuspidal-characters-by-polynomial-labels.md) · Source-based reconstruction draft. Starting from the classical classification, identify Frobenius orbits with irreducible polynomial labels and derive the finite-field character formula used in the main proof.
+- [Counting exhausts the cuspidal characters](proofs/en/counting-exhausts-the-cuspidal-characters.md) · Source-based reconstruction draft. Compare the polynomial count with the bound on generic constituents to show that the constructed family exhausts the cuspidal characters.
+
 ### Simultaneous family construction
 
 - [The new prime preserves the dyadic pairing and ray coordinates](proofs/en/the-new-prime-preserves-the-dyadic-pairing-and-ray-coordinates.md) · Adapted reconstruction draft with Lean references. Pass to a four-cocycle kernel and adjust Frobenius by tame inertia to realize the pairing and all ray coordinates together.
